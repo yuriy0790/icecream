@@ -63,7 +63,7 @@
 @mixin btn-border-mob {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -91,7 +91,7 @@
   padding: 12px 34px;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -132,7 +132,7 @@
   line-height: calc(18 / 14);
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 
   background-color: var(--accent-color);
   color: var(--black-text-color);
@@ -186,7 +186,7 @@
 
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   text-decoration-line: underline;
 
   color: var(--accent-color);
