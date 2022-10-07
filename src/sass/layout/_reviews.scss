@@ -1,22 +1,37 @@
 .reviews {
+  background-image: url(../images/gallery/bg/sm-bg-@1x.jpg);
+  text-align: center;
 }
-.section {
-}
-.container {
-}
-.section-title {
-}
-.visually-hidden {
-}
+
 .reviews__img-wrap {
+}
+.reviews__img {
+  display: inline-block;
 }
 .reviews__comment-wrap {
   width: 100%;
   max-width: 460px;
+  padding: 34px 39px;
+  margin-top: 32px;
+  border-radius: 10px;
+
+  background-color: var(--primary-fon-color);
 }
 .reviews__comment {
+  font-size: 12px;
+  line-height: 2.55;
+  letter-spacing: 0.06em;
+
+  color: var(--white-text-color);
 }
 .reviews__author {
+  margin-top: 30px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+
+  color: var(--black-text-color);
 }
 .slider {
 }
