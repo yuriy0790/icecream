@@ -1,0 +1,27 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #84a178;
+ 
+}
+
+.about__submit {
+  @include uppertitle-font(700, 18px, 1.22);
+  text-align: center;
+   margin-bottom: 12px;
+}
+
+.about__title {
+  @include h2-font-mob;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about__img {
+@include flex-centred;
+flex-direction: column;
+}
+.about__text { 
+  @include special-font (400,12px,1.76,#FCFCFC);
+}
