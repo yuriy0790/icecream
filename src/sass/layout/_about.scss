@@ -24,9 +24,4 @@ flex-direction: column;
 }
 .about__text { 
   @include special-font (400,12px,1.76,#FCFCFC);
-  text-align: center;
-  width: 220px;
-}
-.about__button {
-  margin-top: 20px;
 }
