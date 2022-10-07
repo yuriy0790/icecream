@@ -9,6 +9,8 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+@mixin h1-font-tab {
+}
 @mixin h2-font-mob {
   font-family: 'Seymour One';
   font-style: normal;
@@ -60,13 +62,145 @@
 }
 
 // Buttons //
-@mixin btn-transparent-mob {
+@mixin btn-border-mob {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 8px;
-  line-height: 10px;
+  line-height: calc(10 / 8);
+  color: #000000;
+
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  background-color: transparent;
+
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+  &:focus {
+    border: 2px solid #0a8817;
+    color: #fcfcfc;
+  }
+  &--disable {
+    border: 2px solid #ababab;
+  }
+}
+@mixin btn-border-desk {
+  padding: 12px 34px;
   display: flex;
   align-items: center;
   text-align: center;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+  &:focus {
+    border: 2px solid #0a8817;
+    color: #fcfcfc;
+  }
+  &--disable {
+    border: 2px solid #ababab;
+  }
 }
+// @mixin btn-border-hover {
+//   border: 2px solid #0a8817;
+// }
+// @mixin btn-border-focus {
+//   border: 2px solid #0a8817;
+//   color: #fcfcfc;
+// }
+// @mixin btn-border-disable {
+//   border: 2px solid #ababab;
+// }
+@mixin btn-full {
+  padding: 12px 34px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  background-color: #f8d24e;
+  color: #000000;
+  border-radius: 10px;
+  border: none;
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
+  &--disable {
+    background-color: #ababab;
+  }
+}
+
+@mixin btn-noborder-mob {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #f8d24e;
+  border-color: transparent;
+  border: none;
+}
+
+@mixin btn-noborder-desk {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #f8d24e;
+  border-color: transparent;
+  border: none;
+
+  &:hover {
+    color: #0a8817;
+  }
+  &:focus {
+    color: #fcfcfc;
+  }
+  &--disable {
+    color: #ababab;
+  }
+}
+// @mixin btn-noborder-hover {
+//   color: #0a8817;
+// }
+// @mixin btn-noborder-focus {
+//   color: #fcfcfc;
+// }
+// @mixin btn-noborder-disable {
+//   color: #ababab;
+// }
