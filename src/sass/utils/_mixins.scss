@@ -77,14 +77,14 @@
   background-color: transparent;
 
   &:hover {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--green-bnt-color);
   }
   &:focus {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--green-bnt-color);
     color: var(--white-text-color);
   }
   &--disable {
-    border: 2px solid #ababab;
+    border: 2px solid var(--gray-text-color);
   }
 }
 @mixin btn-border-desk {
@@ -103,14 +103,14 @@
   border-radius: 10px;
 
   &:hover {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--green-bnt-color);
   }
   &:focus {
-    border: 2px solid #0a8817;
+    border: 2px solid var(--green-bnt-color);
     color: var(--white-text-color);
   }
   &--disable {
-    border: 2px solid #ababab;
+    border: 2px solid var(--gray-text-color);
   }
 }
 // @mixin btn-border-hover {
@@ -135,18 +135,18 @@
   text-align: center;
 
   background-color: var(--accent-color);
-  color: #000000;
+  color: var(--black-text-color);
   border-radius: 10px;
   border: none;
   &:hover {
-    background-color: #0a8817;
+    background-color: var(--green-bnt-color);
   }
   &:focus {
-    background-color: #0a8817;
+    background-color: var(--green-bnt-color);
     color: var(--white-text-color);
   }
   &--disable {
-    background-color: #ababab;
+    background-color: var(--gray-text-color);
   }
 }
 
@@ -163,8 +163,18 @@
   text-decoration-line: underline;
 
   color: var(--accent-color);
+  background-color: transparent;
   border-color: transparent;
   border: none;
+  &:hover {
+    color: var(--green-bnt-color);
+  }
+  &:focus {
+    color: var(--white-text-color);
+  }
+  &--disable {
+    color: var(--gray-text-color);
+  }
 }
 
 @mixin btn-noborder-desk {
@@ -184,13 +194,13 @@
   border: none;
 
   &:hover {
-    color: #0a8817;
+    color: var(--green-bnt-color);
   }
   &:focus {
     color: var(--white-text-color);
   }
   &--disable {
-    color: #ababab;
+    color: var(--gray-text-color);
   }
 }
 // @mixin btn-noborder-hover {
@@ -202,3 +212,18 @@
 // @mixin btn-noborder-disable {
 //   color: #ababab;
 // }
+@mixin visibility-hidden {
+  visibility: hidden;
+  height: 0;
+}
+@mixin conteiner {
+  @media (min-width: $minmobile) {
+    max-width: 480px;
+  }
+  @media (min-width: $mintablet) {
+    max-width: 768px;
+  }
+  @media (min-width: $mindesktop) {
+    max-width: 1200px;
+  }
+}
