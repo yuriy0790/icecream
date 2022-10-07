@@ -44,3 +44,16 @@ button {
   cursor: pointer;
   border: 0;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+
+  background-color: #84a178;
+  color: #131313;
+
+  min-width: 320px;
+}
