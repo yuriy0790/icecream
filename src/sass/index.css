@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 html {
   box-sizing: border-box;
@@ -44,4 +45,70 @@ a {
 button {
   cursor: pointer;
   border: 0;
+}
+
+:root {
+  --primary-fon-color: #84A178;
+  --green-fon-color: #AEC6A5;
+  --yellow-fon-color: #EFD478;
+  --brown-fon-color: #D6936D;
+  --brown-fon-color:#FCFCFC;
+  --accent-color: #F8D24E;
+  --black-text-color: #131313;
+  --white-text-color: #FCFCFC;
+  --white-text-color: #FCFCFC;
+}
+
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+/* Заголовки секцій */
+.section-title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+.section-subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.2333333333;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+@media (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
