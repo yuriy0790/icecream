@@ -1,1 +1,37 @@
 <!-- gallery -->
+<section class="gallery section">
+  <div class="container">
+    <h2 class="section-title visually-hidden">Gallery</h2>
+    <div class="gallery__wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery/lg-card1@1x.jpg 1x,
+            ./images/gallery/lg-card1@2x.jpg 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/md-card1@1x.jpg 1x,
+            ./images/gallery/md-card1@2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/sm-card1@1x.jpg 1x,
+            ./images/gallery/sm-card1@2x.jpg 2x
+          "
+          media="(max-width:767px)"
+        />
+
+        <img
+          class="gallery__img"
+          src="./images/gallery/lg-card1@1x.jpg"
+          alt="ice-creams"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

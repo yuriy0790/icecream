@@ -1,0 +1,43 @@
+.header__menu {
+  @media (max-width: $maxtablet) {
+    padding: 48px 23px 63px;
+    display: none;
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      gap: 111px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      z-index: 3;
+
+      background-color: var(--primary-fon-color);
+    }
+  }
+}
+.header__nav {
+}
+.header__list {
+}
+.header__el {
+  @media (max-width: 767px) {
+    &:not(:last-child) {
+      padding-bottom: 32px;
+    }
+  }
+}
+.header__link {
+  @include special-font(700, 32px, calc(39 / 32), var(--white-text-color));
+  &:hover,
+  &:focus {
+    color: var(--black-text-color);
+  }
+}
+.header__btn {
+  margin: 0 auto;
+  max-width: 152px;
+  @include btn-full;
+}

@@ -30,7 +30,7 @@
       />
     </picture>
   </a>
-  <div class="header__menu">
+  <div class="header__menu" data-menu>
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__el">
@@ -56,8 +56,14 @@
       aria-label="Переключатель мобильного меню"
       aria-expanded="false"
     >
-      <use class="header__icon"></use>
-      <use class="header__icon"></use>
+      <use
+        href="./images/sprite.svg#icon-burger"
+        class="header__icon header__icon--menu"
+      ></use>
+      <use
+        href="./images/sprite.svg#icon-burger-close"
+        class="header__icon header__icon--close"
+      ></use>
     </svg>
   </button>
 </div>
