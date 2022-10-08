@@ -59,7 +59,7 @@ bottom: 0;
 .about__text { 
   @include special-font (400,12px,1.76,#FCFCFC);
   text-align: center;
-  width: 220px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -69,7 +69,7 @@ bottom: 0;
 .about__text-two {
   @include special-font (400,12px,1.76,#FCFCFC);
   text-align: center;
-  width: 220px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
