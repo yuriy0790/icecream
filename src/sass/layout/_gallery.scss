@@ -1,6 +1,25 @@
 .gallery {
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-fon-color) 24px,
+    #fff 24px,
+    #fff 100%
+  );
 }
 .gallery__wrapper {
+  border-radius: 11px;
+  max-width: 704px;
+
+  @media screen and (min-width: $minmobile) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: $mindesktop) {
+    border-radius: 24px;
+  }
+
+  margin: 0 auto;
+  overflow: hidden;
 }
 .gallery__img {
   margin: 0 auto;
