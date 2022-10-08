@@ -1,14 +1,9 @@
 .gallery {
-  background-image: linear-gradient(
-    to bottom,
-    var(--primary-fon-color) 24px,
-    #fff 24px,
-    #fff 100%
-  );
+  position: relative;
 }
 .gallery__wrapper {
   border-radius: 11px;
-  max-width: 704px;
+  max-width: 1013px;
 
   @media screen and (min-width: $minmobile) {
     border-radius: 18px;
@@ -23,4 +18,57 @@
 }
 .gallery__img {
   margin: 0 auto;
+}
+
+.backgroundtest {
+  width: 100%;
+  min-height: 941px;
+  background-image: url(../images/gallery/bg/sm-bg-@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/gallery/bg/sm-bg-@2x.jpg);
+  }
+
+  top: 18%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: -1000;
+
+  @media screen and (min-width: 320px) {
+    min-height: 941px;
+    background-image: url(../images/gallery/bg/md-bg-@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/gallery/bg/md-bg-@2x.jpg);
+    }
+    top: 18%;
+  }
+
+  @media screen and (min-width: $mintablet) {
+    min-height: 958px;
+    background-image: url(../images/gallery/bg/lg-bg-@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/gallery/bg/lg-bg-@2x.jpg);
+    }
+    top: 50%;
+  }
+
+  @media screen and (min-width: $mindesktop) {
+    min-height: 1020px;
+    background-image: url(../images/gallery/bg/xlg-bg-@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/gallery/bg/xlg-bg-@2x.jpg);
+    }
+    top: 22%;
+    background-repeat: repeat-x;
+  }
 }
