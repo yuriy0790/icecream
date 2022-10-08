@@ -1,15 +1,8 @@
 .reviews {
-  // background-image: url(../images/gallery/bg/sm-bg-@1x.jpg);
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 402px;
 
   background-position: cover;
-
-  @media screen and (min-width: $mintablet) {
-    padding-top: 80px;
-    padding-bottom: 383px;
-  }
 }
 
 .reviews__img-wrap {
