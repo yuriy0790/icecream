@@ -1,0 +1,136 @@
+
+.advantages__title-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+color: var(--title-text-color);
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+}
+
+.advantages__description {
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+  text-align: center;
+  color: #FCFCFC;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .advantages__number {
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 18px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  display: block;
+  
+  &::before {
+    content: ' ';
+    background-color: #f8d24e;
+    display: block;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    width: 50px;
+    height: 50px;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: 36px;
+    background-position: center;
+    background-image: url(../images/About/icon/cowicon@1x.png);
+    margin-top: 42px;
+
+}
+
+}
+
+
+.advantages__weight {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    display: block;
+
+&::before {
+    content: ' ';
+    background-color: #f8d24e;
+    display: block;
+    margin-top: 28px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: 36px;
+    background-position: center;
+    background-image: url(../images/About/icon/weighticon@2x.png); 
+}
+}
+
+.advantages__quantity {
+    margin-top: 22px;
+    margin-bottom: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    display: block;
+
+&::before {
+    content: ' ';
+    background-color: #f8d24e;
+    display: block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 22px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: 36px;
+    background-position: center;
+    background-image: url(../images/About/icon/iceCremaicon@2x.png); 
+}
+}
+
+  
+  
