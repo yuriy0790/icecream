@@ -1,37 +1,75 @@
 .reviews {
-  background-image: url(../images/gallery/bg/sm-bg-@1x.jpg);
   text-align: center;
+  padding-top: 80px;
+
+  background-position: cover;
 }
 
 .reviews__img-wrap {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
 }
 .reviews__img {
-  display: inline-block;
 }
 .reviews__comment-wrap {
+  display: inline-flex;
   width: 100%;
-  max-width: 460px;
+
   padding: 34px 39px;
   margin-top: 32px;
   border-radius: 10px;
 
   background-color: var(--primary-fon-color);
+
+  @media screen and (min-width: $mintablet) {
+    padding: 29px 80px;
+    margin-top: 28px;
+    border-radius: 24px;
+  }
+
+  @media screen and (min-width: $mindesktop) {
+    padding: 39px 109px;
+    margin-top: 32px;
+    max-width: 968px;
+  }
 }
 .reviews__comment {
   font-size: 12px;
   line-height: 2.55;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 
   color: var(--white-text-color);
+
+  @media screen and (min-width: $mintablet) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: $mindesktop) {
+    font-size: 16px;
+  }
 }
 .reviews__author {
   margin-top: 30px;
   margin-bottom: 14px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
 
   color: var(--black-text-color);
+
+  @media screen and (min-width: $mintablet) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    font-size: 16px;
+  }
 }
 .slider {
+  background-color: red;
 }

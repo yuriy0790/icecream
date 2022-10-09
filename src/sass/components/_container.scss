@@ -11,9 +11,13 @@
 
   @media screen and (min-width: $mintablet) {
     width: $mintablet;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: $mindesktop) {
     width: $mindesktop;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

@@ -2,10 +2,10 @@
   <a href="" class="header__logo">
     <picture>
       <source
-        media="(max-width: 767px)"
+        media="(min-width: 1200px)"
         srcset="
-          ./images/header/sm-logo@1x.png 1x,
-          ./images/header/sm-logo@2x.png 2x
+          ./images/header/lg-logo@1x.png 1x,
+          ./images/header/lg-logo@2x.png 2x
         "
       />
       <source
@@ -16,10 +16,10 @@
         "
       />
       <source
-        media="(min-width: 1200px)"
+        media="(max-width: 767px)"
         srcset="
-          ./images/header/lg-logo@1x.png 1x,
-          ./images/header/lg-logo@2x.png 2x
+          ./images/header/sm-logo@1x.png 1x,
+          ./images/header/sm-logo@2x.png 2x
         "
       />
       <img
@@ -30,40 +30,42 @@
       />
     </picture>
   </a>
-  <div class="header__menu" data-menu>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__el">
-          <a href="http://" class="header__link">Home</a>
-        </li>
-        <li class="header__el">
-          <a href="http://" class="header__link">How it’s made?</a>
-        </li>
-        <li class="header__el">
-          <a href="http://" class="header__link">Our products</a>
-        </li>
-        <li class="header__el">
-          <a href="http://" class="header__link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <button type="button" class="header__btn">Buy now</button>
+  <div class="header__btn-position">
+    <button type="button" class="header__menu-btn" data-menu-button>
+      <svg
+        width="32"
+        height="32"
+        aria-label="Переключатель мобильного меню"
+        aria-expanded="false"
+      >
+        <use
+          href="./images/sprite.svg#icon-burger"
+          class="header__icon header__icon--menu"
+        ></use>
+        <use
+          href="./images/sprite.svg#icon-burger-close"
+          class="header__icon header__icon--close"
+        ></use>
+      </svg>
+    </button>
+    <div class="header__menu" data-menu>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__el">
+            <a href="http://" class="header__link">Home</a>
+          </li>
+          <li class="header__el">
+            <a href="http://" class="header__link">How it’s made?</a>
+          </li>
+          <li class="header__el">
+            <a href="http://" class="header__link">Our products</a>
+          </li>
+          <li class="header__el">
+            <a href="http://" class="header__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header__btn">Buy now</button>
+    </div>
   </div>
-  <button type="button" class="header__menu-btn" data-menu-button>
-    <svg
-      width="32"
-      height="32"
-      aria-label="Переключатель мобильного меню"
-      aria-expanded="false"
-    >
-      <use
-        href="./images/sprite.svg#icon-burger"
-        class="header__icon header__icon--menu"
-      ></use>
-      <use
-        href="./images/sprite.svg#icon-burger-close"
-        class="header__icon header__icon--close"
-      ></use>
-    </svg>
-  </button>
 </div>
