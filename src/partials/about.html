@@ -1,21 +1,61 @@
+
 <!-- tradition and love how it’s made? -->
 <section class="about">
-<div class="container">
-<p class="about__submit"> tradition and love </p>
-<h2 class="about__title">how it’s made?</h2>
-<div class="about__img">
-    <!-- <img 
-    src="" 
-    alt="cow"
-    width="278"
-    height="278"
-    >  -->
-    <p class="about__text">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p>
-    <p class="about__text">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
-    </p>
-    <button></button>
-</div>
+    <div class="container">
+    <p class="about__submit"> tradition and love </p>
+    <h2 class="about__title">how it’s made?</h2>
+    
+    <ul class="about__list">
+        
+        <li class="about__item">
+       
+       <img class="about__images"
+       srcset="./images/about/sm-cow@1x.png 280w,
+       ./images/about/sm-cow@2x.png 280w,
+       ./images/about/md-cow@1x.png 335w,
+       ./images/about/md-cow@2x.png 335w,
+       ./images/about/lg-cow@1x.png 490w,
+       ./images/about/lg-cow@2x.png 490w   
+       "
+       sizes="(min-width: 1200px) 490px, (min-width: 768px) 335px, (min-width: 370px) 280px, 100vw"
+       src="./images/about/sm-cow@2x.png"
+       alt="cow"
+        loading="lazy" >
+    </li>
+  <li>
+        <p class="about__text">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p>
+        <p class="about__text-two">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
+        </p>
+        <p class="about__text-hidden">This is enough to choose ice cream and 
+            coffee for any mood!</p>
+        
+        <button type="button" class="about__button">Read more
+            <svg class="about__arrow" width="17" height="17">
+            <use href="./images/sprite.svg#icon-arrow">
 
+            </use>
+        </svg>
+         </button>
+        </li>
+    </ul>
+        <h2 class="advantages__title-hidden ">Advantahes of company</h2>
 
+       <ul class="class advantages__list">
+        <li class="advantages__item">
+<p class="advantages__number">721</p>
+<p class="advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+</li>
+<li class="advantages__item">
+<p class="advantages__weight">16kg</p>
+<p class="advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+</li>
+<li class="advantages__item">
+<p class="advantages__quantity">84</p>
+<p class="advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+</li>
+</ul>
 </div>
+    
+    
+    
 </section>

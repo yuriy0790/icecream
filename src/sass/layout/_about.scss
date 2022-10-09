@@ -1,27 +1,197 @@
+
 .about {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #84a178;
- 
-}
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #84a178;
+   
+  }
+  
+  .about__submit {
+    @include uppertitle-font(700, 18px, 1.22);
+    text-align: center;
+     margin-bottom: 12px;
+  }
+  
+  .about__title {
+    @include h2-font-mob;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about__thumb {
+    display: block;
+   position: relative;
+   top: 0;
+   bottom: 0;
+   width: 280px;
+   height: 280px;
+   margin-left: auto;
+   margin-right: auto;
+  
+  }
+  
+  .about__position {
+    width: 280px;
+    height: 280px; 
+    margin-left: auto;
+    margin-right: auto;
+   position: absolute;
+   bottom: 20px;
+   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 140.182px;
+  
+  }
+  
+  .position__relative {
+  
+    width: 100%;
+    height: 100%;
+  
+  
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+  }
+  
+  .about__images {
+    width: 100%;
+  
+  }
+  
+  
+  .about__item {
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+    border-radius: 50%;
+  
+   
+  }
+  
 
-.about__submit {
-  @include uppertitle-font(700, 18px, 1.22);
+  .about__text { 
+    @include special-font (400,12px,1.76,#FCFCFC);
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+    
+    @media screen and (min-width:768px) {
+      text-align: start; 
+      margin-bottom: 8px;
+      width: 334px;
+      margin-left: 0;
+    
+    }
+  
+  }
+  
+  .about__text-two {
+    @include special-font (400,12px,1.76,#FCFCFC);
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @media screen and (min-width:768px) {
+      text-align: start;
+      width: 334px;
+      margin-left: 0;
+      
+    }
+  }
+  
+  .about__button {
+    @include btn-full;
+    margin-top: 20px ;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: end;
+  
+    @media screen and (min-width:768px) {
+  margin-left: 0px;
+  margin-top: 48px;
+    }
+  }
+  
+  
+  .about__description {
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
   text-align: center;
-   margin-bottom: 12px;
-}
-
-.about__title {
-  @include h2-font-mob;
+  
+  color: #FCFCFC;
+  }
+  
+  .about__number {
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #fcfcfc;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.about__img {
-@include flex-centred;
-flex-direction: column;
-}
-.about__text { 
-  @include special-font (400,12px,1.76,#FCFCFC);
-}
+  color: #FCFCFC;
+  display: block;
+  }
+  
+  .about__number::before {
+    background-image: url('../images/about/icon/cowicon@1x.png');
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+  }
+  
+  .about__arrow {
+  margin-left: 4px;
+  
+  }
+  
+  .about__list {
+   display: block;
+   margin: 0 auto;
+  
+   @media screen and (min-width:768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+   }
+  }
+  
+  .about__text-hidden {
+  visibility: hidden;
+  
+    @media screen and (min-width:768px) {
+      @include special-font (400,12px,1.76,#FCFCFC);
+      width: 100%;
+      margin-right: auto;
+      margin-top: 8px;
+      text-align: start; 
+   visibility: visible;
+   width: 336px;
+      
+      
+      
+    }
+  }
+  
+  
