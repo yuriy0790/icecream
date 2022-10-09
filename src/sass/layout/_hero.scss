@@ -25,7 +25,7 @@
 
   @media screen and (min-width: 768px) {
     width: $mintablet;
-    padding: 40px 32px 193px;
+    padding: 40px 32px 210px;
     background-image: url(../images/hero/dots/md-dots@1x.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -196,6 +196,7 @@
   position: absolute;
   pointer-events: none;
   //   min-width: 157px;
+
   @media (max-width: $maxtablet) {
     width: calc(100% / 1.2);
     max-width: 360px;
@@ -204,9 +205,10 @@
     transform: translateX(-50%);
   }
 
-  @media screen and (min-width: $mintablet) {
+  @media screen and (min-width: 768px) {
     bottom: 0;
     right: 30px;
+
     width: calc(100% * 0.5);
   }
   @media (min-width: 1200px) {
