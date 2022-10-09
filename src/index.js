@@ -21,20 +21,20 @@ window.$ = window.jQuery = jQuery;
 
 $(document).ready(function () {
     $('.slider').slick({
-        arrows: true,
-        dots: true,
+        arrows: false,
+        dots: false,
         adaptiveHeight: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        speed: 2000,
+        speed: 1500,
         easing: `ease`,
         infinite: true,
         initialSlide: 0,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 3500,
         pauseOnFocus: true,
         pauseOnHover: true,
-        pauseOnDotsHover:true,
+        pauseOnDotsHover:false,
         fade:true,
     });
     
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.slider2').slick({
-        arrows: true,
+        arrows: false,
         dots: true,
         adaptiveHeight: true,
         slidesToShow: 1,
@@ -51,12 +51,12 @@ $(document).ready(function () {
         easing: `ease`,
         infinite: true,
         initialSlide: 0,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         pauseOnFocus: true,
         pauseOnHover: true,
         pauseOnDotsHover:true,
-        fade:true,
+        fade:false,
     });
     
 });

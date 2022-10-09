@@ -78,7 +78,7 @@
   position: relative;
   margin: 0 auto;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 24px;
 }
 .slider__item {
   width: 704px;
@@ -88,89 +88,100 @@
   display: block;
   height: 100%;
   width: 100%;
-  border-radius: 20px;
-
+  max-width: 1013px;
+  border-radius: 18px;
   object-fit: cover;
+  border-radius: 11px;
+
+  @media screen and (min-width: $minmobile) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: $mindesktop) {
+    border-radius: 24px;
+  }
 }
 
-/* Слайдер */
-.slick-slider {
+/* Слайдер 1*/
+.slider .slick-slider {
   width: 704px;
   height: 327px;
 }
 /* Слайдер запущен */
-.slick-slider.slick-initialized {
+.slider .slick-slider.slick-initialized {
 }
 /* Слайдер с точками */
-.slick-slider.slick-dotted {
+.slider .slick-slider.slick-dotted {
 }
 /* Ограничивающая оболочка */
-.slick-list {
+.slider .slick-list {
   overflow: hidden;
 }
 /* Лента слайдов */
-.slick-track {
+.slider .slick-track {
   display: flex;
 }
 /* Слайд */
-.slick-slide {
+.slider .slick-slide {
 }
 /* Слайд активный (показывается) */
-.slick-slide.slick-active {
+.slider .slick-slide.slick-active {
 }
 /* Слайд основной */
-.slick-slide.slick-current {
+.slider .slick-slide.slick-current {
 }
 /* Слайд по центру */
-.slick-slide.slick-center {
+.slider .slick-slide.slick-center {
 }
 /* Клонированный слайд */
-.slick-slide.slick-cloned {
+.slider .slick-slide.slick-cloned {
 }
 /* Стрелка */
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  margin: -30px 0px 0px 0px;
-  z-index: 10;
-  font-size: 0;
-  width: 30px;
-  height: 60px;
+.slider .slick-arrow {
+  display: none;
+  // position: absolute;
+  // top: 50%;
+  // margin: -30px 0px 0px 0px;
+  // z-index: 10;
+  // font-size: 0;
+  // width: 0px;
+  // height: 0px;
 }
 /* Стрелка влево */
-.slick-arrow.slick-prev {
-  left: 0;
-  background: url(../images/left.png) 0 0 / 100% no-repeat;
+.slider .slick-arrow.slick-prev {
+  // left: 0;
+  // background: url(../images/left.png) 0 0 / 100% no-repeat;
 }
 /* Стрелка вправо */
-.slick-arrow.slick-next {
-  right: 0;
-  background: url(../images/right.png) 0 0 / 100% no-repeat;
+.slider .slick-arrow.slick-next {
+  // right: 0;
+  // background: url(../images/right.png) 0 0 / 100% no-repeat;
 }
 /* Стрелка не активная */
-.slick-arrow.slick-disabled {
+.slider .slick-arrow.slick-disabled {
 }
 /* Точки (булиты) */
-.slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.slider .slick-dots {
+  display: none;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
 }
-.slick-dots li {
-  list-style: none;
-  margin: 0px 10px;
+.slider .slick-dots li {
+  //   list-style: none;
+  //   margin: 0px 10px;
 }
 /* Активная точка */
-.slick-dots li.slick-active {
+.slider .slick-dots li.slick-active {
 }
-.slick-dots li.slick-active button {
-  background-color: blue;
+.slider .slick-dots li.slick-active button {
+  //   background-color: blue;
 }
 /* Элемент точки */
-.slick-dots li button {
-  font-size: 0;
-  width: 12px;
-  height: 12px;
-  background-color: green;
-  border-radius: 50%;
+.slider .slick-dots li button {
+  // font-size: 0;
+  // width: 12px;
+  // height: 12px;
+  // background-color: green;
+  // border-radius: 50%;
 }
