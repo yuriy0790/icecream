@@ -1,23 +1,68 @@
 <section class="hero">
   <div class="hero__container">
-    <h1 class="hero__title">
-      ice cream made with
-      <span class="hero__title hero__title--end">passion</span>
-    </h1>
-    <div class="hero__position-btn">
-      <button type="button" class="hero__btn hero__btn--border">
-        Products
-      </button>
-      <button type="button" class="hero__btn hero__btn--noborder">
-        How it’s made?
+    <div>
+      <h1 class="hero__title">
+        ice cream <br />
+        made with <br />
+        <span class="hero__title hero__title--end">passion</span>
+      </h1>
+      <div class="hero__position-btn">
+        <button type="button" class="hero__btn hero__btn--border">
+          Products
+        </button>
+        <button type="button" class="hero__btn hero__btn--noborder">
+          How it’s made?
+        </button>
+      </div>
+    </div>
+    <ul class="hero__right-side">
+      <li class="hero__el">
+        <span class="hero__number">16</span
+        ><span class="hero__subnumber">cafes</span>
+      </li>
+      <li class="hero__el">
+        <span class="hero__number">23</span
+        ><span class="hero__subnumber">food trucks</span>
+      </li>
+    </ul>
+    <div class="hero__description">
+      <span class="hero__description-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </span>
+      <button type="button" class="hero__description-btn">
+        <svg class="hero__description-icon" width="39" heidth="14">
+          <use href="./images/sprite.svg#icon-arrow-default"></use>
+        </svg>
       </button>
     </div>
+    <picture class="hero__plate">
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/hero/plate/lg-plate@1x.png 1x,
+          ./images/hero/plate/lg-plate@2x.png 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/hero/plate/md-plate@1x.png 1x,
+          ./images/hero/plate/md-plate@2x.png 2x
+        "
+      />
+      <img
+        src="./images/hero/plate/md-plate@1x.png"
+        alt="Ice-cream"
+        class="hero__img-plate"
+      />
+    </picture>
     <picture class="hero__ice-face">
       <source
-        media="(max-width: 767px)"
+        media="(min-width: 1200px)"
         srcset="
-          ./images/hero/ice-cream/sm-iceCream@1x.png 1x,
-          ./images/hero/ice-cream/sm-iceCream@2x.png 2x
+          ./images/hero/ice-cream/lg-iceCream@1x.png 1x,
+          ./images/hero/ice-cream/lg-iceCream@2x.png 2x
         "
       />
       <source
@@ -28,16 +73,15 @@
         "
       />
       <source
-        media="(min-width: 1200px)"
+        media="(max-width: 767px)"
         srcset="
-          ./images/hero/ice-cream/lg-iceCream@1x.png 1x,
-          ./images/hero/ice-cream/lg-iceCream@2x.png 2x
+          ./images/hero/ice-cream/sm-iceCream@1x.png 1x,
+          ./images/hero/ice-cream/sm-iceCream@2x.png 2x
         "
       />
       <img
         src="./images/hero/ice-cream/sm-iceCream@1x.png"
-        alt="Logo"
-        width="157"
+        alt="Ice-cream"
         class="header__img-face"
       />
     </picture>
