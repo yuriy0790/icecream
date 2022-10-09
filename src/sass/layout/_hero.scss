@@ -189,6 +189,32 @@
     bottom: 65px;
     left: 17px;
   }
+  -webkit-animation: moveplate 4s 1;
+  -webkit-animation-delay: ease-in-out;
+  animation: moveplate 4s 1;
+  animation-delay: ease-in-out;
+}
+
+@-webkit-keyframes moveplate {
+  from {
+    transform: rotate(360deg) scale(0.3);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes moveplate {
+  from {
+    transform: rotate(360deg) scale(0.3);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0) scale(1);
+    opacity: 1;
+  }
 }
 .hero__ice-face {
 }
@@ -196,6 +222,33 @@
   position: absolute;
   pointer-events: none;
   //   min-width: 157px;
+  -webkit-animation: moveface 2s 1;
+  -webkit-animation-delay: 0;
+  animation: moveface 2s 1;
+  animation-delay: 0;
+  animation-fill-mode: none;
+
+  @-webkit-keyframes moveface {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveface {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 
   @media (max-width: $maxtablet) {
     width: calc(100% / 1.2);
