@@ -33,23 +33,40 @@ line-height: 37px;
     text-transform: uppercase;
     color: #fcfcfc;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 54px;
     max-width: 210px;
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width:768px) {
-    max-width: 100%;
-    font-family: 'Seymour One';
+    
+    
+    @media screen and (min-width:768px) and (max-width:1199px) {
+font-size: 36px;
+line-height: 1.25;
+max-width: 100%;
+font-family: 'Seymour One';
 font-style: normal;
 font-weight: 400;
 font-size: 34px;
 line-height: 1.26;
 letter-spacing: 0.06em;
+margin-bottom: 79px;
     }
-    @media screen and (min-width:768px) and (max-width:1199px) {
-font-size: 36px;
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
 line-height: 1.25;
+max-width: 100%;
+font-family: 'Seymour One';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 1.26;
+letter-spacing: 0.06em;
+margin-bottom: 121px;
+
+
+        
     }
   }
   
@@ -93,6 +110,7 @@ line-height: 1.25;
     max-width: 280px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 
     @media screen and (min-width:768px) {
         max-width: 335px;
@@ -106,10 +124,57 @@ max-width: 480px;
   
   
   .about__item {
-margin-right: 100px;
+
+    position: relative;
+
+    @media screen and (min-width:1200px) {
+padding-left: 16px;
+     margin-right: 100px;   
+    }
+
    
   }
   
+  .about__shadow {
+    width: 280px;
+    height: 280px;
+    bottom: 21px;
+    right: 50%;
+    transform: translateX(50%);
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+border-radius: 50%;
+margin-left: auto;
+margin-right: auto;
+position: absolute;
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    width: 335px;
+    height: 335px;
+    bottom: 26px;
+    right: 50%;
+    transform: translateX(50%);
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+border-radius: 50%;
+position: absolute;
+}
+
+@media screen and (min-width:1200px) { 
+    width: 490px;
+    height: 490px;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+    padding-left: 16px;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+border-radius: 50%;
+position: absolute;
+    
+}
+
+  }
 
   .about__text { 
     @include special-font (400,12px,1.76,#FCFCFC);
@@ -117,7 +182,7 @@ margin-right: 100px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+   
     max-width: 220px;
     
     
