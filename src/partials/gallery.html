@@ -3,35 +3,58 @@
   <div class="container">
     <h2 class="section-title visually-hidden">Gallery</h2>
     <div class="gallery__wrapper">
-      <picture>
-        <source
-          srcset="
-            ./images/gallery/lg-card1@1x.jpg 1x,
-            ./images/gallery/lg-card1@2x.jpg 2x
-          "
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/md-card1@1x.jpg 1x,
-            ./images/gallery/md-card1@2x.jpg 2x
-          "
-          media="(min-width:320px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/sm-card1@1x.jpg 1x,
-            ./images/gallery/sm-card1@2x.jpg 2x
-          "
-          media="(max-width:320px)"
-        />
+      <div class="slider">
+        <div class="slider__item">
+          <!-- <img
+            class="gallery__img"
+            src="./images/gallery/lg-card1@1x.jpg"
+            alt="ice-creams"
+          /> -->
+          <picture>
+            <source
+              srcset="
+                ./images/gallery/lg-card1@1x.jpg 1x,
+                ./images/gallery/lg-card1@2x.jpg 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./images/gallery/md-card1@1x.jpg 1x,
+                ./images/gallery/md-card1@2x.jpg 2x
+              "
+              media="(min-width:320px)"
+            />
+            <source
+              srcset="
+                ./images/gallery/sm-card1@1x.jpg 1x,
+                ./images/gallery/sm-card1@2x.jpg 2x
+              "
+              media="(max-width:320px)"
+            />
 
-        <img
-          class="gallery__img"
-          src="./images/gallery/lg-card1@1x.jpg"
-          alt="ice-creams"
-        />
-      </picture>
+            <img
+              class="gallery__img"
+              src="./images/gallery/lg-card1@1x.jpg"
+              alt="ice-creams"
+            />
+          </picture>
+        </div>
+        <div class="slider__item">
+          <img
+            class="gallery__img"
+            src="./images/gallery/lg-card2@1x.jpg"
+            alt="ice-creams"
+          />
+        </div>
+        <div class="slider__item">
+          <img
+            class="gallery__img"
+            src="./images/gallery/lg-card3@1x.jpg"
+            alt="ice-creams"
+          />
+        </div>
+      </div>
     </div>
   </div>
   <div class="backgroundtest"></div>
