@@ -27,7 +27,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  min-width: 138px;
+  min-height: 138px;
 
   padding: 34px 39px;
   margin-top: 32px;
@@ -159,10 +159,10 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  gap: 18px;
 }
 .slider2 .slick-dots li {
   list-style: none;
-  margin: 0px 12px;
 }
 /* Активная точка */
 .slider2 .slick-dots li.slick-active {
