@@ -240,6 +240,15 @@ margin-top: 0;
 
   }
   
+  .about__arrow {
+    margin-left: 4px;
+    fill: currentColor;
+    }
+
+    .about__arrow:focus {
+        fill:#FCFCFC;
+    } 
+
   .about__button {
     @include btn-full;
     margin-top: 20px ;
@@ -252,7 +261,10 @@ margin-top: 0;
   margin-top: 48px;
     }
   }
-  
+
+  .about__button:focus .about__arrow {
+    fill: #FCFCFC;
+  }  
   
   .about__description {
     font-family: 'Montserrat';
@@ -285,10 +297,7 @@ margin-top: 0;
     background-size: contain;
   }
   
-  .about__arrow {
-  margin-left: 4px;
   
-  }
   
   .about__list {
    display: block;
