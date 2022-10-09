@@ -1,16 +1,41 @@
 .header__menu {
-  @media (max-width: $maxtablet) {
+  @media (max-width: 767px) {
     padding: 48px 23px 63px;
     display: none;
     &.is-open {
       display: flex;
       flex-direction: column;
-      gap: 111px;
+      justify-content: space-between;
+
       position: absolute;
       top: 100%;
       left: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: calc(100vh - 50px);
+      text-align: center;
+      z-index: 3;
+
+      background-color: var(--primary-fon-color);
+    }
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    gap: 247px;
+  }
+}
+.header__nav {
+  @media (max-width: 1199px) {
+    display: none;
+    .header__menu.is-open & {
+      display: flex;
+      flex-direction: column;
+      padding-top: 76px;
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 60px);
       text-align: center;
       z-index: 3;
 
@@ -18,9 +43,12 @@
     }
   }
 }
-.header__nav {
-}
 .header__list {
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+  }
 }
 .header__el {
   @media (max-width: 767px) {
@@ -28,16 +56,50 @@
       padding-bottom: 32px;
     }
   }
+  @media (max-width: 1199px) {
+    &:not(:last-child) {
+      padding-bottom: 40px;
+    }
+  }
 }
 .header__link {
+  display: block;
+  width: 100%;
   @include special-font(700, 32px, calc(39 / 32), var(--white-text-color));
   &:hover,
   &:focus {
     color: var(--black-text-color);
+  }
+  @media (min-width: 768px) {
+    @include special-font(700, 48px, calc(59 / 48), var(--white-text-color));
+  }
+  @media (min-width: 1200px) {
+    padding-top: 40px;
+    @include special-font(700, 16px, calc(20 / 16), var(--white-text-color));
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 .header__btn {
   margin: 0 auto;
   max-width: 152px;
   @include btn-full;
+  @media (min-width: 768px) {
+    margin-top: 24px;
+    .header__menu.is-open & {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    margin-top: 28px;
+    &::after {
+      margin-left: 12px;
+      content: '';
+      background-image: url('../images/arrow-icon/arrow-btn.svg');
+      height: 10px;
+      width: 7px;
+    }
+  }
 }
