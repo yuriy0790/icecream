@@ -60,3 +60,5 @@ $(document).ready(function () {
     });
     
 });
+
+import './js/modals'
