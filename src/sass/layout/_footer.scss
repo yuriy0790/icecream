@@ -1,10 +1,23 @@
 .footer {
     padding-bottom: 62px;
     position: relative;
+
+    @media screen and(min-width: 768px) {
+        padding-bottom: 13px;
+    }
+}
+.wrap-flex {
+    @media screen and(min-width: 768px) {
+        display: flex;
+    }
 }
 .footer__wrap {
     margin-bottom: 42px;
     max-width: 240px;
+
+    @media screen and(min-width: 768px) {
+        max-width: 352px;
+    }
 }
 .footer__subtitle {
     margin-bottom: 16px;
@@ -16,6 +29,11 @@
 
     color: #FCFCFC;
 
+    @media screen and(min-width: 768px) {
+        margin-bottom: 9px;
+        font-size: 26px;
+    }
+
 }
 .footer__title {
     font-weight: 700;
@@ -25,6 +43,12 @@
     text-transform: uppercase;
 
     color: #FCFCFC;
+
+    @media screen and(min-width: 768px) {
+        font-size: 48px;
+        line-height: calc(59/48);
+        letter-spacing: 0.06em;
+    }
 }
 
 .footer-connection {
@@ -40,6 +64,14 @@
         height: 1px;
         background: rgba(225, 225, 225, 1);
     
+        @media screen and(min-width: 768px) {
+            bottom: 53px;
+        }
+    }
+
+    @media screen and(min-width: 768px) {
+        margin-left: auto;
+        padding-top: 68px;
     }
 }
 
@@ -49,6 +81,10 @@
     justify-content: end;
     gap: 27px;
     margin-bottom: 38px;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 32px;
+    }
 }
 // .footer-connection__item {
     
@@ -63,21 +99,35 @@
     border-radius: 50%;
     fill: rgba(132, 161, 120, 1);
 
-    transition: fill var(--animation);
+    transform: scale(1);
+    transition: fill var(--animation),
+    transform var(--animation);
 
     &:hover,
     &:focus {
+        transform: scale(1.20);
         fill: var(--white-text-color);
     }
 }
-// .footer-connection__icon {
-// }
+.footer-connection__icon {
+    transform: scale(1);
+    transition: transform var(--animation);
+   
+    .footer-connection__link:hover &,
+    .footer-connection__link:focus & {
+        transform: scale(1.20);
+    }
+}
 .footer-connection__phone {
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: normal;
     text-align: right;
+
+    @media screen and(min-width: 768px) {
+        font-size: 14px;
+    }
 }
 .footer-connection__link-phone {
     color: var( --white-text-color);
