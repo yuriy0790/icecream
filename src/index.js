@@ -34,10 +34,10 @@ $(document).ready(function () {
         autoplaySpeed: 3500,
         pauseOnFocus: true,
         pauseOnHover: true,
-        pauseOnDotsHover:false,
-        fade:true,
+        pauseOnDotsHover: false,
+        fade: true,
     });
-    
+
 });
 
 $(document).ready(function () {
@@ -55,10 +55,10 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         pauseOnFocus: true,
         pauseOnHover: true,
-        pauseOnDotsHover:true,
-        fade:false,
+        pauseOnDotsHover: true,
+        fade: false,
     });
-    
+
 });
 
 import './js/modals'
