@@ -1,0 +1,85 @@
+<!-- <div data-buy-modal class="buy__backdrop"> -->
+<div class="buy__modal modal" data-modal="1">
+  <button type="button" class="buy__close-btn">
+    <svg
+      width="16"
+      height="16"
+      class="buy__close-icon js-modal-close modal__cross"
+    >
+      <use href="./images/sprite.svg#icon-modal-close"></use>
+    </svg>
+  </button>
+  <form buy-now class="buy__form">
+    <h2 class="buy__title">Buy now</h2>
+    <ul class="buy__item-list">
+      <li class="buy__item">
+        <input
+          type="checkbox"
+          name="ice-cream"
+          class="buy__check buy__check--green"
+          id="green"
+        />
+        <label for="green" class="buy__katalog buy__katalog--green">
+          <span class="buy__icon buy__icon--ice"></span>ICE CREAM</label
+        >
+      </li>
+      <li class="buy__item">
+        <input
+          type="checkbox"
+          name="ice-cream"
+          class="buy__check buy__check--yellow"
+          id="yellow"
+        />
+        <label for="yellow" class="buy__katalog buy__katalog--yellow"
+          ><span class="buy__icon buy__icon--coffee"></span>ICE COFFEE</label
+        >
+      </li>
+      <li class="buy__item">
+        <input
+          type="checkbox"
+          name="ice-cream"
+          class="buy__check buy__check--browm"
+          id="brown"
+        />
+        <label for="brown" class="buy__katalog buy__katalog--brown"
+          ><span class="buy__icon buy__icon--milk"></span>MILKSHAKE</label
+        >
+      </li>
+    </ul>
+    <ul class="buy__input-list">
+      <li class="buy__input-item">
+        <label for="name">
+          <input
+            type="text"
+            name="name"
+            class="buy__input"
+            placeholder="Name"
+          />
+        </label>
+      </li>
+      <li class="buy__input-item">
+        <label for="">
+          <input
+            type="tel"
+            name="telephone"
+            class="buy__input"
+            placeholder="Phone"
+          />
+        </label>
+      </li>
+      <li class="buy__input-item">
+        <label for="">
+          <input
+            type="textarea"
+            name="Comment"
+            class="buy__input buy__input--textarea"
+            placeholder="Comment"
+          />
+        </label>
+      </li>
+    </ul>
+    <button type="submit" class="buy__submit">Submit</button>
+  </form>
+</div>
+<div class="overlay js-overlay-modal"></div>
+<!-- </div> -->
