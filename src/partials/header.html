@@ -27,6 +27,7 @@
         alt="Logo"
         width="41"
         class="header__img"
+        loading="lazy"
       />
     </picture>
   </a>
@@ -52,20 +53,22 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__el">
-            <a href="http://" class="header__link">Home</a>
+            <a href="#home" class="header__link">Home</a>
           </li>
           <li class="header__el">
-            <a href="http://" class="header__link">How it’s made?</a>
+            <a href="#how-its-made" class="header__link">How it’s made?</a>
           </li>
           <li class="header__el">
-            <a href="http://" class="header__link">Our products</a>
+            <a href="#product" class="header__link">Our products</a>
           </li>
           <li class="header__el">
-            <a href="http://" class="header__link">Contact</a>
+            <a href="#contact" class="header__link">Contact</a>
           </li>
         </ul>
       </nav>
-      <button type="button" class="header__btn">Buy now</button>
+      <button type="button" class="header__btn js-open-modal" data-modal="1">
+        Buy now
+      </button>
     </div>
   </div>
 </div>

@@ -108,6 +108,10 @@
     }
   }
 }
+.hero__btn-link {
+  display: block;
+  color: inherit;
+}
 .hero__right-side {
   position: absolute;
   right: 32px;
@@ -256,6 +260,27 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    @-webkit-keyframes moveface {
+      from {
+        transform: translateX(-50%) scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes moveface {
+      from {
+        transform: translateX(-50%) scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {
