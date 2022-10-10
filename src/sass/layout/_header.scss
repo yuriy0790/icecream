@@ -33,6 +33,7 @@ header {
 }
 .header__logo {
   display: block;
+  z-index: 25;
   @media (max-width: 767px) {
   }
   @media (min-width: 768px) {
@@ -50,6 +51,7 @@ header {
   width: 100%;
 }
 .header__btn-position {
+  display: flex;
   @media (min-width: 768px) {
     display: flex;
     gap: 32px;
@@ -58,7 +60,7 @@ header {
 }
 .header__menu-btn {
   padding: 16px 0 0 0;
-
+  z-index: 25;
   background-color: transparent;
   align-items: center;
   @include flex-centred;
