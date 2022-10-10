@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" id="home">
   <div class="hero__container">
     <div>
       <h1 class="hero__title">
@@ -8,10 +8,10 @@
       </h1>
       <div class="hero__position-btn">
         <button type="button" class="hero__btn hero__btn--border">
-          Products
+          <a href="#product" class="hero__btn-link">Products</a>
         </button>
         <button type="button" class="hero__btn hero__btn--noborder">
-          How it’s made?
+          <a href="#how-its-made" class="hero__btn-link">How it’s made?</a>
         </button>
       </div>
     </div>
@@ -68,8 +68,8 @@
       <source
         media="(min-width: 768px)"
         srcset="
-          ./images/hero/ice-cream/md-iceCream@1x.png 1x,
-          ./images/hero/ice-cream/md-iceCream@2x.png 2x
+          ./images/hero/ice-cream/md-iceCream@1x-copy.png 1x,
+          ./images/hero/ice-cream/md-iceCream@2x-copy.png 2x
         "
       />
       <source
@@ -83,6 +83,7 @@
         src="./images/hero/ice-cream/sm-iceCream@1x.png"
         alt="Ice-cream"
         class="header__img-face"
+        loading="lazy"
       />
     </picture>
   </div>
