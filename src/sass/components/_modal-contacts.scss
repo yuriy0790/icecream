@@ -1,0 +1,41 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.modal-franchise {
+    padding: 28px 30px;
+    min-width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px; 
+
+}
+// .modal-franchise__btn {
+// }
+// .modal-franchise__icon {
+// }
+// .modal-franchise__title {
+// }
+// .modal-franchise__text {
+// }
+// .form-franchise {
+// }
+// .form-franchise__label {
+// }
+// .franchise-form__input {
+// }
+// .franchise-form__dsc {
+// }
+// .form-franchise__textarea {
+// }
+// .franchise-btn {
+// }
