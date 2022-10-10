@@ -99,15 +99,25 @@
     border-radius: 50%;
     fill: rgba(132, 161, 120, 1);
 
-    transition: fill var(--animation);
+    transform: scale(1);
+    transition: fill var(--animation),
+    transform var(--animation);
 
     &:hover,
     &:focus {
+        transform: scale(1.20);
         fill: var(--white-text-color);
     }
 }
-// .footer-connection__icon {
-// }
+.footer-connection__icon {
+    transform: scale(1);
+    transition: transform var(--animation);
+   
+    .footer-connection__link:hover &,
+    .footer-connection__link:focus & {
+        transform: scale(1.20);
+    }
+}
 .footer-connection__phone {
     font-weight: 700;
     font-size: 12px;
