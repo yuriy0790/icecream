@@ -18,6 +18,11 @@
     border: 2px solid #F8D24E;
     border-radius: 10px; 
     z-index: 20;
+
+    @media screen and (min-width: 768px) {
+        padding: 32px 60px;
+        width: 568px;
+    }
 }
 .modal-franchise__btn {
     display: flex;
@@ -41,6 +46,15 @@
     line-height: calc(24/16);
     color: #131313;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        width: 322px;
+        margin: 0 auto;
+        margin-bottom: 24px;
+
+        font-size: 20px;
+        line-height: calc(28/20);
+    }
 }
 .modal-franchise__text {
     margin-bottom: 24px;
@@ -50,14 +64,29 @@
     line-height: 1.4;
     color: #131313;
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: normal;
+    }
 }
 .form-franchise {
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    @media screen and (min-width: 768px) {
+        gap: 16px;
+    }
 }
 .form-franchise__label {
     position: relative;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 auto;
+    }
 }
 .franchise-form__input {
     width: 100%;
@@ -73,18 +102,42 @@
         line-height: 1.4;
         color: #131313;
     }
+
+    @media screen and (min-width: 768px) {
+        width: 368px;
+        height: 42px;
+        padding-left: 16px;
+
+        &::placeholder {
+            opacity: 0;
+        }
+    }
 }
 .franchise-form__dsc {
     display: none;
-    // position: absolute;
-    // top: 50%;
-    // left: 12px;
-    // transform: translateY(-50%);
     
 
-    // font-size: 12px;
-    // line-height: 1.4;
-    // color: #131313;
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+        
+
+        font-size: 12px;
+        line-height: 1.4;
+        color: #131313;
+
+        transition: transform var(--animation),
+        color var(--animation);
+        
+        .franchise-form__input:focus + &,
+        .franchise-form__input:not(:placeholder-shown) + & {
+            transform: translate(-170%, -50%);
+            color: rgba(214, 147, 109, 1);
+        }
+    }
 }
 .form-franchise__textarea {
     resize: none;
@@ -103,9 +156,28 @@
         color: #131313;
     }
 
-    // & ~ .franchise-form__dsc {
-    //     top: 25%;
-    // }
+    @media screen and (min-width: 768px) {
+       width: 368px;
+       height: 84px;
+
+       transition: transform var(--animation),
+        color var(--animation);
+       
+        & ~ .franchise-form__dsc {
+        top: 25%;
+        }
+       
+        &::placeholder {
+            opacity: 0;
+        }
+
+        &:focus + .franchise-form__dsc,
+        &:not(:placeholder-shown) + .franchise-form__dsc {
+            transform: translate(-140%, -55%);
+            color: rgba(214, 147, 109, 1);
+        }
+    }
+    
 }
 .franchise-btn {
     padding: 12px 34px;
@@ -120,4 +192,16 @@
 
     background: #F8D24E;
     border-radius: 10px;
+
+    transition: background-color var(--animation),
+    color var(--animation);
+
+    &:hover {
+        background-color: rgba(10, 136, 23, 1);
+    }
+
+    &:focus {
+        background-color: rgba(10, 136, 23, 1);
+        color: var(--white-text-color);
+    }
 }
