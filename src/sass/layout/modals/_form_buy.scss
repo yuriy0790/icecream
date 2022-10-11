@@ -1,0 +1,124 @@
+.buy__form {
+  margin: 0 auto;
+  padding: 28px 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buy__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+// Checkbox морозива
+
+.buy__item-list {
+}
+.buy__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buy__katalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 132px;
+  max-width: calc(100% - 148px);
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+  border-radius: 15.7808px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  &--green {
+    border: 2px solid #96af8c;
+    .buy__check:checked ~ & {
+      background-color: #96af8c;
+    }
+  }
+  &--yellow {
+    border: 2px solid #efd478;
+    .buy__check:checked ~ & {
+      background: #efd478;
+    }
+  }
+  &--brown {
+    border: 2px solid #d6936d;
+    .buy__check:checked ~ & {
+      background: #d6936d;
+    }
+  }
+}
+.buy__check {
+  appearance: none;
+}
+
+.buy__icon {
+  margin: 0 auto;
+  display: inline-block;
+  border: none;
+  width: 132px;
+  height: 140px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 50%;
+
+  &--ice {
+    background-image: url(../images/products/sm-iceCream@1x.png);
+
+    // &::before {
+    //   display: block;
+    //   content: '';
+    //   width: 132px;
+    //   height: 132px;
+    //   background-color: var(--primary-fon-color);
+    //   border-radius: 50%;
+    //   transform: translateY(10px);
+    //   z-index: 20;
+    // }
+  }
+  &--coffee {
+    background-image: url(../images/products/sm-iceCoffee@1x.png);
+  }
+  &--milk {
+    background-image: url(../images/products/sm-milkshakes@1x.png);
+  }
+}
+
+.buy__shadow {
+  &--green {
+  }
+  &--yellow {
+  }
+  &--brown {
+  }
+}
+.buy__name {
+}
+// INPUT
+
+.buy__input-list {
+}
+.buy__input-item {
+}
+.buy__input {
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  min-height: 32px;
+  outline: none;
+}
+.buy__submit {
+  @include btn-full;
+}
