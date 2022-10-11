@@ -26,6 +26,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 40;
+
   transition: 0.3s all;
   &.active {
     opacity: 1;
@@ -48,6 +49,8 @@
   z-index: 41; /* Должен быть выше чем у подложки*/
   background-color: var(--modal-fon-color);
 
+  // border-color: var(--yellow-border-color);
+  border-radius: 10px;
   &.active {
     opacity: 1;
     visibility: visible;
@@ -63,4 +66,11 @@
   right: 8px;
   background-color: var(--modal-fon-color);
   cursor: pointer;
+  fill: currentColor;
+  transition: transform 500ms;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transform: scale(1.5);
+  }
 }
