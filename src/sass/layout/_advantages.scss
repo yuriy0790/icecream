@@ -1,7 +1,27 @@
+
+.advantages {
+    padding-bottom: 36px;
+    background-color: #84a178;
+    
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        padding-bottom: 40px;
+        background-color: #84a178; }
+
+        @media screen and (min-width:1200px) {
+            padding-bottom: 86px;
+            background-color: #84a178;
+            
+        }
+        
+    
+}
+
+
+
 .advantages__title-hidden {
     position: absolute;
     width: 1px;
-    height: 1px;
+    height: 0px;
     margin: -1px;
     border: 0;
     padding: 0;

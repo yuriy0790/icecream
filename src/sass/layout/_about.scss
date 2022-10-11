@@ -1,11 +1,12 @@
 
 .about {
     padding-top: 60px;
-    padding-bottom: 60px;
     background-color: #84a178;
    
   }
-  
+
+
+
   .about__submit {
     @include uppertitle-font(700, 18px, 1.22);
     text-align: center;
