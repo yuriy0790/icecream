@@ -13,6 +13,12 @@
 
         mobileMenuRef.classList.toggle("is-open");
     });
+    mobileMenuRef.addEventListener('click', (event) => {
+
+        if (event.target.classList.contains('header__link')) {
+            mobileMenuRef.classList.toggle("is-open");
+        }
+    })
 })();
 
 import jQuery from "jquery";
