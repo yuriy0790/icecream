@@ -18,16 +18,12 @@
   }
 }
 .buy__modal {
-  top: 0;
-  left: 0;
-  width: 50vw;
-  height: 50vh;
-
+  max-width: 280px;
+  height: calc(100vh - 50px);
+  border-radius: 15px;
   /*  Центрируем и задаем z-index */
   position: fixed;
-  // top: 0;
-  // left: 0;
-  transform: translate(0, 0);
+
   overflow-x: hidden;
   overflow-y: auto;
 
