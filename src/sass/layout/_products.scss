@@ -263,3 +263,26 @@
     font-size: 16px;
   }
 }
+
+// Стрілка виклику модалки (стилі copy з hero)
+.products__description-btn {
+  display: block;
+  margin-top: 15px;
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+  @media (min-width: 1200px) {
+    margin-top: 30px;
+  }
+}
+.products__description-icon {
+  height: 15px;
+  fill: currentColor;
+  transition: transform 500ms;
+  .products__description-btn:hover & {
+    transform: scaleX(1.3);
+  }
+  .products__description-btn:focus & {
+    transform: scale(1.5);
+  }
+}

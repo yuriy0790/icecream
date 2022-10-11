@@ -80,6 +80,7 @@
   margin: 0 auto;
   background-color: #fff;
   border-radius: 8px;
+  z-index: 19;
 
   @media screen and (min-width: $minmobile) {
     border-radius: 18px;
