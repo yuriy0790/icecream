@@ -11,17 +11,15 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
+
   &.active {
     opacity: 1;
     visibility: visible;
   }
 }
 .buy__modal {
-  // /* Скрываем окна  */
-  // opacity: 0;
-  // visibility: hidden;
-
-  /*  Установаем ширину окна  */
+  top: 0;
+  left: 0;
   width: 50vw;
   height: 50vh;
 
@@ -29,7 +27,9 @@
   position: fixed;
   // top: 0;
   // left: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(0, 0);
+  overflow-x: hidden;
+  overflow-y: auto;
 
   // z-index: 30; /* Должен быть выше чем у подложки*/
 
@@ -44,11 +44,6 @@
   top: 8px;
   right: 8px;
   background-color: var(--modal-fon-color);
-  // width: 15px;
-  // height: 15px;
-  // position: absolute;
-  // top: 20px;
-  // right: 20px;
-  // fill: #444;
+
   cursor: pointer;
 }
