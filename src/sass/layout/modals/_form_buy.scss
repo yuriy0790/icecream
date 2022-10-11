@@ -6,8 +6,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (min-width: 480px) {
+    max-width: 480px;
+  }
 }
 .buy__title {
+  margin: 38px auto 21px;
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
@@ -19,18 +23,30 @@
 // Checkbox морозива
 
 .buy__item-list {
+  margin-bottom: 24px;
+  padding-left: 46px;
+  padding-right: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .buy__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 84px;
+  min-width: 132px;
+  width: 100%;
 }
 .buy__katalog {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-width: 132px;
-  max-width: calc(100% - 148px);
+  justify-content: flex-end;
+  padding-bottom: 21px;
+  width: 100%;
+  height: 137px;
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 15.7808px;
   font-family: 'Montserrat';
@@ -41,52 +57,47 @@
   text-align: center;
   letter-spacing: 0.04em;
   &--green {
-    border: 2px solid #96af8c;
+    border: 2px solid var(--green-modal-circle);
     .buy__check:checked ~ & {
-      background-color: #96af8c;
+      background-color: var(--green-modal-circle);
     }
   }
   &--yellow {
-    border: 2px solid #efd478;
+    border: 2px solid var(--yellow-fon-color);
     .buy__check:checked ~ & {
-      background: #efd478;
+      background-color: var(--yellow-fon-color);
     }
   }
   &--brown {
-    border: 2px solid #d6936d;
+    border: 2px solid var(--brown-fon-color);
     .buy__check:checked ~ & {
-      background: #d6936d;
+      background-color: var(--brown-fon-color);
     }
   }
 }
 .buy__check {
+  display: block;
   appearance: none;
 }
 
 .buy__icon {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0 auto;
   display: inline-block;
   border: none;
   width: 132px;
-  height: 140px;
+  height: 132px;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 25;
 
   border-radius: 50%;
 
   &--ice {
     background-image: url(../images/products/sm-iceCream@1x.png);
-
-    // &::before {
-    //   display: block;
-    //   content: '';
-    //   width: 132px;
-    //   height: 132px;
-    //   background-color: var(--primary-fon-color);
-    //   border-radius: 50%;
-    //   transform: translateY(10px);
-    //   z-index: 20;
-    // }
   }
   &--coffee {
     background-image: url(../images/products/sm-iceCoffee@1x.png);
@@ -97,27 +108,69 @@
 }
 
 .buy__shadow {
+  position: absolute;
+  top: -44.3%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  z-index: 20;
   &--green {
+    background: linear-gradient(
+        0deg,
+        var(--green-circle-color),
+        var(--green-circle-color)
+      ),
+      var(--white-circle-color);
+    box-shadow: var(--green-box-shadow-circle);
   }
   &--yellow {
+    background: linear-gradient(
+        0deg,
+        var(--yellow-circle-color),
+        var(--yellow-circle-color)
+      ),
+      var(--white-circle-color);
+    box-shadow: var(--yellow-box-shadow-circle);
   }
   &--brown {
+    background: linear-gradient(
+        0deg,
+        var(--brown-circle-color),
+        var(--brown-circle-color)
+      ),
+      var(--white-circle-color);
+    box-shadow: var(--brown-box-shadow-circle);
   }
 }
 .buy__name {
+  display: block;
 }
 // INPUT
 
 .buy__input-list {
+  margin-bottom: 24px;
 }
 .buy__input-item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
 }
 .buy__input {
+  padding: 8px 12px 7px;
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid var(--primary-fon-color);
   border-radius: 10px;
   min-height: 32px;
   outline: none;
+  &::placeholder {
+    color: var(--black-text-color);
+  }
+  &--textarea {
+    width: 100%;
+    min-height: 65px;
+  }
 }
 .buy__submit {
   @include btn-full;
