@@ -208,15 +208,41 @@
     bottom: 65px;
     left: 17px;
   }
-  -webkit-animation: moveplate 4s 1;
+  -webkit-animation: moveplate 5s 1;
   -webkit-animation-delay: ease-in-out;
-  animation: moveplate 4s 1;
+  animation: moveplate 5s 1;
   animation-delay: ease-in-out;
+  &:hover,
+  &:focus {
+    -webkit-animation: rotateplate 2s infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    animation: rotateplate 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
 }
-
+@-webkit-keyframes rotateplate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes rotateplate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 @-webkit-keyframes moveplate {
   from {
-    transform: rotate(360deg) scale(0.3);
+    transform: rotate(360deg) scale(0.1);
     opacity: 0;
   }
   to {
@@ -227,7 +253,7 @@
 
 @keyframes moveplate {
   from {
-    transform: rotate(360deg) scale(0.3);
+    transform: rotate(360deg) scale(0.1);
     opacity: 0;
   }
   to {
@@ -242,9 +268,9 @@
   pointer-events: none;
   //   min-width: 157px;
   -webkit-animation: moveface 2s 1;
-  -webkit-animation-delay: 0;
+  -webkit-animation-delay: 0.5s;
   animation: moveface 2s 1;
-  animation-delay: 0;
+  animation-delay: 0.5s;
   animation-fill-mode: none;
 
   @-webkit-keyframes moveface {

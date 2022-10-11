@@ -1,23 +1,28 @@
 .buy__form {
   margin: 0 auto;
   padding: 28px 28px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media (min-width: 480px) {
-    max-width: 480px;
+  @media (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .buy__title {
-  margin: 38px auto 21px;
+  margin: 0 auto 5px;
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  text-align: center;
+  line-height: calc(24 / 16);
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
 }
 
 // Checkbox морозива
@@ -30,6 +35,14 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 32px;
+  }
 }
 .buy__item {
   display: flex;
@@ -37,7 +50,11 @@
   align-items: center;
   gap: 84px;
   min-width: 132px;
+
   width: 100%;
+  @media (min-width: 768px) {
+    width: 132px;
+  }
 }
 .buy__katalog {
   position: relative;
@@ -49,13 +66,8 @@
   height: 137px;
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 15.7808px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
+  @include special-font(700, 16px, calc(20 / 16), var(--black-text-color));
   text-align: center;
-  letter-spacing: 0.04em;
   &--green {
     border: 2px solid var(--green-modal-circle);
     .buy__check:checked ~ & {
@@ -150,26 +162,42 @@
 // INPUT
 
 .buy__input-list {
+  width: 100%;
   margin-bottom: 24px;
+  @media (min-width: 768px) {
+    width: 368px;
+    margin-bottom: 32px;
+  }
 }
 .buy__input-item {
   &:not(:last-child) {
     margin-bottom: 12px;
+    @media (min-width: 768px) {
+      margin-bottom: 16px;
+    }
   }
 }
 .buy__input {
+  width: 100%;
   padding: 8px 12px 7px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--primary-fon-color);
   border-radius: 10px;
   min-height: 32px;
   outline: none;
+  @media (min-width: 768px) {
+    min-height: 42px;
+  }
   &::placeholder {
     color: var(--black-text-color);
   }
   &--textarea {
     width: 100%;
     min-height: 65px;
+    resize: none;
+    @media (min-width: 768px) {
+      min-height: 84px;
+    }
   }
 }
 .buy__submit {
