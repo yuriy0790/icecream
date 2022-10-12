@@ -17,6 +17,8 @@
 
         if (event.target.classList.contains('header__link')) {
             mobileMenuRef.classList.toggle("is-open");
+            menuBtnRef.classList.remove('is-open');
+            menuBtnRef.setAttribute('aria-expanded', false);
         }
     })
 })();
@@ -26,8 +28,7 @@ window.$ = window.jQuery = jQuery;
 
 
 // $(document).ready(function ()
-document.addEventListener("DOMContentLoaded", function()
- {
+document.addEventListener("DOMContentLoaded", function () {
     $('.slider').slick({
         arrows: false,
         dots: false,
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function()
 
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     $('.slider2').slick({
         arrows: false,
         dots: true,
