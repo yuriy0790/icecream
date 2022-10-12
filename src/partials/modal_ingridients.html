@@ -1,13 +1,99 @@
 <div class="ingridients__modal modal" data-modal="2">
-  <button type="button" class="ingridients__close-btn">
-    <svg
-      width="16"
-      height="16"
-      class="modal__cross ingridients__close-icon js-modal-close"
-    >
-      <use href="./images/sprite.svg#icon-modal-close"></use>
-    </svg>
-  </button>
-  <form buy-now class="ingridients__form"></form>
+  <div class="ingridients__container">
+    <button type="button" class="ingridients__close-btn">
+      <svg
+        width="16"
+        height="16"
+        class="modal__cross ingridients__close-icon js-modal-close"
+      >
+        <use href="./images/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <form class="ingridients__form" name="ingridients__form">
+      <h2 class="ingridients__title">Chololate icecream</h2>
+      <picture>
+        <source
+          srcset="
+            ./images/products/choko@1x.png 1x,
+            ./images/products/choko@2x.png 2x
+          "
+        />
+        <img
+          class="ingridients__img"
+          src="./images/products/choko@1x.png"
+          alt="chokolate ice-cream"
+        />
+      </picture>
+      <span class="ingridients__shadow"></span>
+      <ul class="ingridients__ovals">
+        <li class="ingridients__oval">
+          <div class="ingridients__round">320</div>
+          <span class="ingridients__oval-text">kcal</span>
+        </li>
+        <li class="ingridients__oval">
+          <div class="ingridients__round">4g</div>
+          <span class="ingridients__oval-text">protein</span>
+        </li>
+        <li class="ingridients__oval">
+          <div class="ingridients__round">8,2g</div>
+          <span class="ingridients__oval-text">Fats</span>
+        </li>
+        <li class="ingridients__oval">
+          <div class="ingridients__round">40,4g</div>
+          <span class="ingridients__oval-text">Carbs</span>
+        </li>
+      </ul>
+      <p class="ingridients__subtitle">Ingredients</p>
+      <div class="ingridients__meta">
+        <ul class="ingridients__name-list">
+          <li class="ingridients__name">Milk</li>
+          <li class="ingridients__name">Belgian chocolate</li>
+          <li class="ingridients__name">Cream</li>
+          <li class="ingridients__name">Cocoa powder</li>
+          <li class="ingridients__name">Sugar</li>
+          <li class="ingridients__name">Vanilla sugar</li>
+        </ul>
+        <ul class="ingridients__amount-list">
+          <li class="ingridients___amount">100ml</li>
+          <li class="ingridients___amount">20g</li>
+          <li class="ingridients___amount">150 ml</li>
+          <li class="ingridients___amount">30g</li>
+          <li class="ingridients___amount">40g</li>
+          <li class="ingridients___amount">10g</li>
+        </ul>
+      </div>
+      <div class="ingridients__inputs-wrap">
+        <label class="ingridients__label">
+          <input
+            type="text"
+            class="ingridients__input"
+            name="name"
+            required
+            placeholder="Name"
+          />
+          <span class="ingridients__dsc"> Name </span>
+        </label>
+        <label class="ingridients__label">
+          <input
+            type="tel"
+            class="ingridients__input"
+            name="phone"
+            required
+            placeholder="Phone"
+          />
+          <span class="ingridients__dsc"> Phone </span>
+        </label>
+        <label class="ingridients__label">
+          <textarea
+            class="ingridients__textarea"
+            name="comment"
+            placeholder="Comment"
+          ></textarea>
+          <span class="ingridients__dsc"> Comment </span>
+        </label>
+      </div>
+      <button type="submit" class="ingridients__btn">Submit</button>
+    </form>
+  </div>
 </div>
 <!-- <div class="overlay js-overlay-modal"></div> -->
