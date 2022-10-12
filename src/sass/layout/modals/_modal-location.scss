@@ -35,11 +35,15 @@
 }
 
 .modal-location__map {
+    max-width: 440px;
+    max-height: 200px;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 24px;
 
     @media screen and (min-width: 768px) {
+        width: 448px;
+        height: 260px;
         margin-bottom: 32px;
     }
 }
