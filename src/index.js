@@ -25,7 +25,9 @@ import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
 
 
-$(document).ready(function () {
+// $(document).ready(function ()
+document.addEventListener("DOMContentLoaded", function()
+ {
     $('.slider').slick({
         arrows: false,
         dots: false,
@@ -46,7 +48,7 @@ $(document).ready(function () {
 
 });
 
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function() {
     $('.slider2').slick({
         arrows: false,
         dots: true,
