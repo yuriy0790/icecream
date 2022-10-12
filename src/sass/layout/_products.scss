@@ -205,54 +205,228 @@
   }
 }
 
-.products__img {
+.products__item--icecream::after {
   position: absolute;
-  width: 200px;
-  top: -55px;
   left: calc(50% - 100px);
-}
-
-.products__fon--icecream {
-  position: absolute;
+  top: -120px;
+  content: "";
+  display: inline-block;
+  background-size: contain;
   width: 200px;
   height: 200px;
-  top: -100px;
+  background-repeat: no-repeat;
+  background-image: url("../images/products/sm-iceCream@1x.png");
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), 
+  (min-resolution: 2dppx) {
+    background-image: url("../images/products/sm-iceCream@2x.png");
+  }
+
+  // tablet screen
+
+    @media screen and (min-width: $mintablet) {
+        background-image: url("../images/products/md-iceCream@1x.png");
+        
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: url("../images/products/md-iceCream@2x.png");
+          }
+    }
+  
+  // desktop screen
+
+    @media screen and (min-width: $mindesktop) {
+      width: 300px;
+      height: 300px;
+      left: calc(50% - 150px);
+      top: -183px;
+      background-image: url("../images/products/lg-iceCream@1x.png");
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url("../images/products/lg-iceCream@2x.png");
+      }
+    }
+}
+
+
+.products__item--icecream::before {
+  position: absolute;
   left: calc(50% - 100px);
+  top: -108px;
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(0deg,
       rgba(156, 190, 143, 0.7),
       rgba(156, 190, 143, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+    // desktop screen
+    
+  @media screen and (min-width: $mindesktop) {
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 150px);
+    top: -165px;
+  }
 }
 
-.products__fon--icecoffee {
+.products__item--icecoffee::after {
   position: absolute;
+  left: calc(50% - 100px);
+  top: -120px;
+  content: "";
+  display: inline-block;
+  background-size: contain;
   width: 200px;
   height: 200px;
-  top: -100px;
+  background-repeat: no-repeat;
+  background-image: url("../images/products/sm-iceCoffee@1x.png");
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url("../images/products/sm-iceCoffee@2x.png");
+  }
+
+  // tablet screen
+
+  @media screen and (min-width: $mintablet) {
+    background-image: url("../images/products/md-iceCoffee@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../images/products/md-iceCoffee@2x.png");
+    }
+  }
+
+  // desktop screen
+
+  @media screen and (min-width: $mindesktop) {
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 150px);
+    top: -183px;
+    background-image: url("../images/products/lg-iceCoffee@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../images/products/lg-iceCoffee@2x.png");
+    }
+  }
+}
+
+
+.products__item--icecoffee::before {
+  position: absolute;
   left: calc(50% - 100px);
+  top: -108px;
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(0deg,
-      rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)),
-    #d9d9d9;
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)),
+      #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+
+  // desktop screen
+
+  @media screen and (min-width: $mindesktop) {
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 150px);
+    top: -165px;
+  }
 }
 
-.products__fon--milkshakes {
+.products__item--milkshakes::after {
   position: absolute;
+  left: calc(50% - 100px);
+  top: -120px;
+  content: "";
+  display: inline-block;
+  background-size: contain;
   width: 200px;
   height: 200px;
-  top: -100px;
-  left: calc(50% - 100px);
-  border-radius: 50%;
-  background: linear-gradient(0deg,
-      rgba(213, 117, 63, 0.7),
-      rgba(213, 117, 63, 0.7)),
-    #d9d9d9;
-  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-image: url("../images/products/sm-milkshakes@1x.png");
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url("../images/products/sm-milkshakes@2x.png");
+  }
+
+  // tablet screen
+
+  @media screen and (min-width: $mintablet) {
+    background-image: url("../images/products/md-milkshakes@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../images/products/md-milkshakes@2x.png");
+    }
+  }
+
+  // desktop screen
+
+  @media screen and (min-width: $mindesktop) {
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 150px);
+    top: -183px;
+    background-image: url("../images/products/lg-milkshakes@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../images/products/lg-milkshakes@2x.png");
+    }
+  }
 }
+
+
+.products__item--milkshakes::before {
+  position: absolute;
+  left: calc(50% - 100px);
+  top: -108px;
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  background: linear-gradient(0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)),
+      #d9d9d9;
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+
+  // desktop screen
+
+  @media screen and (min-width: $mindesktop) {
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 150px);
+    top: -165px;
+  }
+}
+
 
 .products__item-title {
   padding-top: 123px;
@@ -299,16 +473,18 @@
 
 // Стрілка виклику модалки (стилі copy з hero)
 .products__description-btn {
+  position: absolute;
+  bottom: 12px;
+  left: calc(50% - 20px);
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 96px;
   padding: 0;
   background-color: transparent;
   color: inherit;
-
-  @media (min-width: 1200px) {
-    margin-top: 30px;
+  
+  @media (min-width: $mindesktop) {
+    bottom: 52px;
   }
 }
 
