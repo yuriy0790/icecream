@@ -91,6 +91,7 @@
   border: 2px solid var(--accent-color);
   border-radius: 8px;
   background-color: transparent;
+  transition: border var(--animation), color var(--animation);
 
   &:hover {
     border: 2px solid var(--green-bnt-color);
@@ -117,6 +118,7 @@
 
   border: 2px solid var(--accent-color);
   border-radius: 10px;
+  transition: border var(--animation), color var(--animation);
 
   &:hover {
     border: 2px solid var(--green-bnt-color);
@@ -129,16 +131,7 @@
     border: 2px solid var(--gray-text-color);
   }
 }
-// @mixin btn-border-hover {
-//   border: 2px solid #0a8817;
-// }
-// @mixin btn-border-focus {
-//   border: 2px solid #0a8817;
-//   color: #fcfcfc;
-// }
-// @mixin btn-border-disable {
-//   border: 2px solid #ababab;
-// }
+
 @mixin btn-full {
   padding: 12px 34px;
   font-family: 'Montserrat';
@@ -154,6 +147,9 @@
   color: var(--black-text-color);
   border-radius: 10px;
   border: none;
+
+  transition: background-color var(--animation), color var(--animation);
+
   &:hover {
     background-color: var(--green-bnt-color);
   }
@@ -182,6 +178,9 @@
   background-color: transparent;
   border-color: transparent;
   border: none;
+
+  transition: color var(--animation);
+
   &:hover {
     color: var(--green-bnt-color);
   }
@@ -208,6 +207,7 @@
   color: var(--accent-color);
   border-color: transparent;
   border: none;
+  transition: color var(--animation);
 
   &:hover {
     color: var(--green-bnt-color);

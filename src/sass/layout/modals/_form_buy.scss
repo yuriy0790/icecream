@@ -185,11 +185,12 @@
   border-radius: 10px;
   min-height: 32px;
   outline: none;
+  @include special-font(400, 12px, calc(17 / 12), var(--black-text-color));
   @media (min-width: 768px) {
     min-height: 42px;
   }
   &::placeholder {
-    color: var(--black-text-color);
+    @include special-font(400, 12px, calc(17 / 12), var(--black-text-color));
   }
   &--textarea {
     width: 100%;
