@@ -60,10 +60,12 @@
 
 
 .products__submit {
+  text-transform: uppercase;
   color: var(--black-text-color);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.22;
+
 
   @media (min-width: $minmobile) {}
 
