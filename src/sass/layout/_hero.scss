@@ -91,7 +91,7 @@
   }
 }
 .hero__btn {
-  padding: 8px 12px;
+  padding: 5px 10px;
   &--border {
     @include btn-border-mob;
   }
@@ -208,17 +208,17 @@
     bottom: 65px;
     left: 17px;
   }
-  -webkit-animation: moveplate 5s 1;
+  -webkit-animation: moveplate 4s 1;
   -webkit-animation-delay: ease-in-out;
-  animation: moveplate 5s 1;
+  animation: moveplate 4s 1;
   animation-delay: ease-in-out;
   &:hover,
   &:focus {
-    -webkit-animation: rotateplate 2s infinite;
+    -webkit-animation: rotateplate 6s infinite;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: normal;
-    animation: rotateplate 2s;
+    animation: rotateplate 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: normal;
@@ -326,9 +326,9 @@
 
   @media screen and (min-width: 768px) {
     bottom: 0;
-    right: 30px;
+    right: 15px;
 
-    width: calc(100% * 0.5);
+    width: calc(100% * 0.52);
   }
   @media (min-width: 1200px) {
     bottom: 0;

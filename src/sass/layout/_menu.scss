@@ -72,6 +72,7 @@
   display: block;
   width: 100%;
   @include special-font(700, 32px, calc(39 / 32), var(--white-text-color));
+  transition: color var(--animation);
   &:hover,
   &:focus {
     color: var(--black-text-color);
@@ -92,6 +93,13 @@
   margin: 0 auto;
   max-width: 152px;
   @include btn-full;
+  &::after {
+    margin-left: 12px;
+    content: '';
+    background-image: url('../images/arrow-icon/arrow-btn.svg');
+    height: 10px;
+    width: 7px;
+  }
   @media (min-width: 768px) and (max-width: 1199px) {
     margin-top: 24px;
     .header__menu.is-open & {
@@ -100,12 +108,5 @@
   }
   @media (min-width: 1200px) {
     margin-top: 28px;
-    &::after {
-      margin-left: 12px;
-      content: '';
-      background-image: url('../images/arrow-icon/arrow-btn.svg');
-      height: 10px;
-      width: 7px;
-    }
   }
 }

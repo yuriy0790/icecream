@@ -67,6 +67,7 @@ header {
   flex-shrink: 0;
   cursor: pointer;
   color: var(--white-text-color);
+  transition: color var(--animation);
   &:hover,
   &:focus {
     color: var(--accent-color);
