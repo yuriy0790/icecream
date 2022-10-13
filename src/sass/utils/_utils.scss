@@ -75,3 +75,10 @@
     transform: scale(1.5);
   }
 }
+
+// custom cursor
+
+.customcusor {
+  cursor: url("../images/cursor.png"),
+    auto;
+}
