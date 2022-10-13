@@ -10,8 +10,8 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px 20px 0;
+
   margin-left: auto;
   margin-right: auto;
   background-color: var(--primary-fon-color);
@@ -38,7 +38,6 @@ header {
   @media (min-width: 768px) {
     width: 48px;
     height: 44px;
-    margin-top: 20px;
   }
   @media (min-width: 1200px) {
     width: 60px;
@@ -58,7 +57,6 @@ header {
   }
 }
 .header__menu-btn {
-  padding: 16px 0 0 0;
   z-index: 20;
   background-color: transparent;
   align-items: center;
@@ -71,6 +69,9 @@ header {
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media (min-width: 768px) {
+    padding: 20px 0 0 0;
   }
   @media (min-width: 1200px) {
     display: none;

@@ -5,6 +5,7 @@
   overflow-y: auto;
 
   background-color: var(--modal-fon-color);
+  height: calc(100vh - 50px);
 
   &.active {
     opacity: 1;
@@ -14,20 +15,12 @@
     min-width: 280px;
     width: calc(100% - 40px);
   }
-  @media (max-width: 767px) {
-    height: calc(100vh - 50px);
-  }
-  @media (min-width: 768px) {
-    max-width: 568px;
-    max-height: 670px;
-  }
-}
-.buy__container {
   @media screen and (min-width: 480px) {
     width: calc(480px - 20px);
   }
 
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     width: 568px;
+    max-height: 680px;
   }
 }
