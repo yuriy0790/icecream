@@ -4,18 +4,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
 
   background-image: url(../images/gallery/bg/bcg2x.jpg);
 
 
 
   @media screen and (min-width: 480px) {
-  background-image: url(../images/gallery/bg/md-bg-@1x.jpg);
+  background-image: url(../images/gallery/bg/sm-bg-@1x.jpg);
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../images/gallery/bg/md-bg-@2x.jpg);
+    background-image: url(../images/gallery/bg/sm-bg-@2x.jpg);
     }
   }
 
