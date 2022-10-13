@@ -1,6 +1,7 @@
 .ingridients__modal {
   overflow-x: hidden;
   overflow-y: auto;
+  height: calc(100vh - 50px);
 
   &.active {
     opacity: 1;
@@ -9,12 +10,6 @@
   @media (max-width: 479px) {
     min-width: 280px;
     width: calc(100% - 40px);
-  }
-  @media (max-width: 767px) {
-    height: calc(100vh - 50px);
-  }
-  @media (min-width: 768px) {
-    max-width: 568px;
   }
 }
 
@@ -45,10 +40,9 @@
   text-align: center;
   padding: 28px 20px;
 
-  //   @media (min-width: 768px) {
-  //     padding-top: 32px;
-  //     padding-bottom: 32px;
-  //   }
+  @media (min-width: 768px) {
+    padding: 32px 40px;
+  }
 }
 
 .ingridients__title {
@@ -61,18 +55,35 @@
   line-height: calc(28 / 20);
 
   @media (min-width: 768px) {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-size: 20px;
     line-height: calc(28 / 20);
   }
 }
-
+.ingridients__img-wrap {
+  position: relative;
+}
 .ingridients__img {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 31px;
 }
 
 .ingridients__shadow {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 7px);
+
+  background: linear-gradient(
+      0deg,
+      var(--green-circle-color),
+      var(--green-circle-color)
+    ),
+    var(--white-circle-color);
+  box-shadow: var(--green-box-shadow-circle);
 }
 .ingridients__ovals {
   display: flex;
@@ -80,13 +91,22 @@
   max-width: 320px;
   margin: 0 auto;
   margin-bottom: 39px;
+  @media (min-width: 768px) {
+    margin-bottom: 48px;
+  }
 }
 .ingridients__oval {
   width: 53px;
   height: 72px;
   border-radius: 40px;
-  border: 2px solid #9cbe8f;
+  border: 2px solid var(--modal-green-accent);
   padding: 0px 3px 3px 3px;
+  @media (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
 }
 
 .ingridients__round {
@@ -98,29 +118,41 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #9cbe8f;
-  border: 2px solid #9cbe8f;
+  background-color: var(--modal-green-accent);
+  border: 2px solid var(--modal-green-accent);
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 
   font-weight: 500;
   font-size: 10px;
   line-height: 2.8;
   letter-spacing: 0.02em;
-  color: #131313;
+  color: var(--black-text-color);
+
+  @media (min-width: 768px) {
+    width: 53px;
+    height: 53px;
+    font-size: 12px;
+    line-height: 2.33;
+    margin-bottom: 6px;
+  }
 }
 .ingridients__oval-text {
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #131313;
+  color: var(--black-text-color);
+  @media (min-width: 768px) {
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
 }
 .ingridients__subtitle {
   margin-bottom: 24px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
-  color: #131313;
+  color: var(--black-text-color);
 }
 .ingridients__meta {
   display: flex;
@@ -135,7 +167,7 @@
   font-size: 14px;
   line-height: 1.76;
   letter-spacing: 0.04em;
-  color: #131313;
+  color: var(--black-text-color);
 
   & + & {
     margin-top: 11px;
@@ -149,7 +181,7 @@
   font-size: 14px;
   line-height: 1.76;
   letter-spacing: 0.04em;
-  color: #131313;
+  color: var(--black-text-color);
 
   & + & {
     margin-top: 11px;
@@ -164,6 +196,7 @@
 
   @media screen and (min-width: 768px) {
     gap: 16px;
+    margin-bottom: 32px;
   }
 }
 .ingridients__label {
@@ -179,13 +212,13 @@
   padding-left: 12px;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid var(--primary-fon-color);
   border-radius: 10px;
 
   &::placeholder {
     font-size: 12px;
     line-height: 1.4;
-    color: #131313;
+    color: var(--black-text-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -210,7 +243,7 @@
 
     font-size: 12px;
     line-height: 1.4;
-    color: #131313;
+    color: var(--black-text-color);
 
     transition: transform var(--animation), color var(--animation);
 
@@ -229,13 +262,13 @@
   padding-left: 12px;
 
   background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
+  border: 1px solid var(--primary-fon-color);
   border-radius: 10px;
 
   &::placeholder {
     font-size: 12px;
     line-height: 1.4;
-    color: #131313;
+    color: var(--black-text-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -267,10 +300,10 @@
 
   font-weight: 600;
   font-size: 14px;
-  line-height: calc(18 / 14);
-  color: #131313;
+  line-height: calc(17 / 14);
+  color: var(--black-text-color);
 
-  background: #f8d24e;
+  background: var(--accent-color);
   border-radius: 10px;
 
   transition: background-color var(--animation), color var(--animation);
@@ -282,5 +315,8 @@
   &:focus {
     background-color: rgba(10, 136, 23, 1);
     color: var(--white-text-color);
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 121px;
   }
 }

@@ -11,20 +11,23 @@
     </button>
     <form class="ingridients__form" name="ingridients__form">
       <h2 class="ingridients__title">Chololate icecream</h2>
-      <picture>
-        <source
-          srcset="
-            ./images/products/choko@1x.png 1x,
-            ./images/products/choko@2x.png 2x
-          "
-        />
-        <img
-          class="ingridients__img"
-          src="./images/products/choko@1x.png"
-          alt="chokolate ice-cream"
-        />
-      </picture>
-      <span class="ingridients__shadow"></span>
+      <div class="ingridients__img-wrap">
+        <span class="ingridients__shadow"></span>
+        <picture>
+          <source
+            srcset="
+              ./images/products/choko@1x.png 1x,
+              ./images/products/choko@2x.png 2x
+            "
+          />
+          <img
+            class="ingridients__img"
+            src="./images/products/choko@1x.png"
+            alt="chokolate ice-cream"
+            width="131"
+          />
+        </picture>
+      </div>
       <ul class="ingridients__ovals">
         <li class="ingridients__oval">
           <div class="ingridients__round">320</div>
