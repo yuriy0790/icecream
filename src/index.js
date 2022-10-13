@@ -17,6 +17,8 @@
 
         if (event.target.classList.contains('header__link')) {
             mobileMenuRef.classList.toggle("is-open");
+            menuBtnRef.classList.remove('is-open');
+            menuBtnRef.setAttribute('aria-expanded', false);
         }
     })
 })();
@@ -26,8 +28,7 @@ window.$ = window.jQuery = jQuery;
 
 
 // $(document).ready(function ()
-document.addEventListener("DOMContentLoaded", function()
- {
+document.addEventListener("DOMContentLoaded", function () {
     $('.slider').slick({
         arrows: false,
         dots: false,
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function()
 
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     $('.slider2').slick({
         arrows: false,
         dots: true,
@@ -68,5 +69,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        const blockID = anchor.getAttribute('href').substr(1)
+
+        document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
 
 import './js/modals'
