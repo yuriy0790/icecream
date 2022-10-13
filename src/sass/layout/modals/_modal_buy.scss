@@ -5,6 +5,7 @@
   overflow-y: auto;
 
   background-color: var(--modal-fon-color);
+  height: calc(100vh - 50px);
 
   &.active {
     opacity: 1;
@@ -18,9 +19,6 @@
     width: calc(480px - 20px);
   }
 
-  @media (max-width: 767px) {
-    height: calc(100vh - 50px);
-  }
   @media (min-width: 768px) {
     width: 568px;
     max-height: 680px;

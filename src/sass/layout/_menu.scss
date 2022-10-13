@@ -68,6 +68,7 @@
     }
   }
 }
+
 .header__link {
   display: block;
   width: 100%;
@@ -81,7 +82,7 @@
     @include special-font(700, 48px, calc(59 / 48), var(--white-text-color));
   }
   @media (min-width: 1200px) {
-    padding-top: 40px;
+    padding-top: 10px;
     @include special-font(700, 16px, calc(20 / 16), var(--white-text-color));
     &:hover,
     &:focus {
@@ -107,6 +108,5 @@
     }
   }
   @media (min-width: 1200px) {
-    margin-top: 28px;
   }
 }
