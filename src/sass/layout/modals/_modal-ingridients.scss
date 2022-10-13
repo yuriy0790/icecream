@@ -189,7 +189,7 @@
 .ingridients__inputs-wrap {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 25px;
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
@@ -212,11 +212,15 @@
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--primary-fon-color);
   border-radius: 10px;
+  outline: transparent;
 
   &::placeholder {
     font-size: 12px;
     line-height: 1.4;
     color: var(--black-text-color);
+  }
+  &:focus {
+    border: 1px solid var(--yellow-border-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -230,43 +234,58 @@
   }
 }
 .ingridients__dsc {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--black-text-color);
+
+  transition: transform var(--animation), color var(--animation);
+
+  .ingridients__input:focus + &,
+  .ingridients__input:not(:placeholder-shown) + & {
+    transform: translateY(-230%);
+    color: var(--orange-text-color);
+  }
 
   @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-
-    font-size: 12px;
-    line-height: 1.4;
-    color: var(--black-text-color);
-
-    transition: transform var(--animation), color var(--animation);
-
-    .ingridients__input:focus + &,
+    .fingridients__input:focus + &,
     .ingridients__input:not(:placeholder-shown) + & {
       transform: translate(-170%, -50%);
-      color: rgba(214, 147, 109, 1);
+      color: var(--orange-text-color);
     }
   }
 }
 .ingridients__textarea {
   resize: none;
   width: 100%;
-  min-height: 64px;
+  height: 64px;
   padding-top: 8px;
   padding-left: 12px;
+  outline: transparent;
 
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--primary-fon-color);
   border-radius: 10px;
 
-  &::placeholder {
-    font-size: 12px;
-    line-height: 1.4;
-    color: var(--black-text-color);
+  transition: border var(--animation);
+
+  & ~ .ingridients__dsc {
+    top: 25%;
+  }
+
+  &:focus {
+    border: 1px solid var(--yellow-border-color);
+  }
+
+  &:focus + .ingridients__dsc,
+  &:not(:placeholder-shown) + .ingridients__dsc {
+    transform: translateY(-230%);
+    color: var(--brown-fon-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -275,18 +294,10 @@
 
     transition: transform var(--animation), color var(--animation);
 
-    & ~ .ingridients__dsc {
-      top: 25%;
-    }
-
-    &::placeholder {
-      opacity: 0;
-    }
-
     &:focus + .ingridients__dsc,
     &:not(:placeholder-shown) + .ingridients__dsc {
       transform: translate(-140%, -55%);
-      color: rgba(214, 147, 109, 1);
+      color: var(--brown-fon-color);
     }
   }
 }
