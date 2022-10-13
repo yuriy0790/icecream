@@ -2,11 +2,9 @@
   background-color: var(--primary-fon-color);
   width: 100%;
   margin: 0 auto;
-  // position: relative;
 }
 
 .hero__container {
-  margin: 0 auto;
   padding: 58px 20px 239px;
   position: relative;
   background-image: url(../images/hero/dots/sm-dots@1x.png);
@@ -19,13 +17,9 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/hero/dots/sm-dots@2x.png);
   }
-  @media screen and (min-width: 480px) {
-    width: $minmobile;
-  }
 
   @media screen and (min-width: 768px) {
-    width: $mintablet;
-    padding: 40px 32px 210px;
+    padding: 40px 20px 210px;
     background-image: url(../images/hero/dots/md-dots@1x.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -36,7 +30,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 41px 16px 332px;
+    padding: 41px 20px 332px;
     width: $mindesktop;
 
     background-image: url(../images/hero/dots/lg-dots@1x.png);
@@ -57,7 +51,6 @@
   @media (max-width: $maxtablet) {
     min-width: 247px;
     max-width: calc(100% * 0.8);
-    // font-size: 6vw;
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 21px;
@@ -72,7 +65,6 @@
   font-size: 34px;
   line-height: calc(33 / 34);
 
-  // font-size: 8vw;
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: calc(13 / 24);
@@ -83,7 +75,6 @@
   }
 }
 .hero__position-btn {
-  //   margin-bottom: 20px;
   display: flex;
   gap: 8px;
   @media screen and (min-width: 1200px) {
@@ -284,7 +275,7 @@
 .header__img-face {
   position: absolute;
   pointer-events: none;
-  //   min-width: 157px;
+
   -webkit-animation: moveface 2s 1;
   -webkit-animation-delay: 0.5s;
   animation: moveface 2s 1;

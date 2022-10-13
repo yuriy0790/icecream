@@ -9,26 +9,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100%;
-  padding: 20px 20px 0;
-
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--primary-fon-color);
-
-  @media (min-width: 480px) {
-    max-width: 480px;
-  }
+  padding-top: 12px;
+  max-height: 50px;
 
   @media (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-    max-width: 768px;
+    padding-top: 20px;
+    max-height: 65px;
   }
   @media (min-width: 1200px) {
-    padding-left: 16px;
-    padding-right: 16px;
-    max-width: 1200px;
+    padding-top: 8px;
+    max-height: 75px;
   }
 }
 .header__logo {
@@ -38,6 +28,7 @@ header {
   @media (min-width: 768px) {
     width: 48px;
     height: 44px;
+    margin-top: 20px;
   }
   @media (min-width: 1200px) {
     width: 60px;
@@ -69,9 +60,6 @@ header {
   &:hover,
   &:focus {
     color: var(--accent-color);
-  }
-  @media (min-width: 768px) {
-    padding: 20px 0 0 0;
   }
   @media (min-width: 1200px) {
     display: none;
