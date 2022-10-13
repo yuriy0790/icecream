@@ -111,7 +111,24 @@
 }
 .hero__btn-link {
   display: block;
-  color: inherit;
+
+  padding: 5px 10px;
+  &--border {
+    @include btn-border-mob;
+  }
+
+  &--noborder {
+    @include btn-noborder-mob;
+  }
+  @media screen and (min-width: 1200px) {
+    &--border {
+      @include btn-border-desk;
+      padding: 10px 34px;
+    }
+    &--noborder {
+      @include btn-noborder-desk;
+    }
+  }
 }
 .hero__right-side {
   position: absolute;

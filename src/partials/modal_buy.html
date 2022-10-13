@@ -16,7 +16,7 @@
         />
         <label for="green" class="buy__katalog buy__katalog--green">
           <span class="buy__icon buy__icon--ice"></span>
-          <div class="buy__shadow buy__shadow--green"></div>
+          <span class="buy__shadow buy__shadow--green"></span>
           <span class="buy__name">ICE CREAM</span></label
         >
       </li>
@@ -29,7 +29,7 @@
         />
         <label for="yellow" class="buy__katalog buy__katalog--yellow"
           ><span class="buy__icon buy__icon--coffee"></span>
-          <div class="buy__shadow buy__shadow--yellow"></div>
+          <span class="buy__shadow buy__shadow--yellow"></span>
           <span class="buy__name">ICE COFFEE</span></label
         >
       </li>
@@ -42,40 +42,42 @@
         />
         <label for="brown" class="buy__katalog buy__katalog--brown"
           ><span class="buy__icon buy__icon--milk"></span>
-          <div class="buy__shadow buy__shadow--brown"></div>
+          <span class="buy__shadow buy__shadow--brown"></span>
           <span class="buy__name">MILKSHAKE</span></label
         >
       </li>
     </ul>
     <div class="buy__input-position">
-      <label for="name" class="buy__label">
+      <label for="buy__name" class="buy__label">
         <input
           type="text"
           name="name"
           class="buy__input"
           placeholder=" "
+          id="buy__name"
           required
         />
         <span class="buy__dsc"> Name </span>
       </label>
 
-      <label class="buy__label">
+      <label class="buy__label" for="buy__tel">
         <input
           type="tel"
           name="telephone"
           class="buy__input"
           placeholder=" "
+          id="buy__tel"
           required
         />
         <span class="buy__dsc"> Phone </span>
       </label>
 
-      <label class="buy__label">
+      <label class="buy__label" for="buy__comment">
         <textarea
-          type="text"
           name="Comment"
           class="buy__textarea"
           placeholder=" "
+          id="buy__comment"
         ></textarea>
         <span class="buy__dsc"> Comment </span>
       </label>
