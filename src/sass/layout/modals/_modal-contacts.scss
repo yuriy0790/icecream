@@ -1,7 +1,23 @@
 .modal-franchise {
+  // padding: 28px 30px;
+  // width: 87.5%;
+  // max-width: 440px;
+  // background: var(--modal-fon-color);
+  // border: 2px solid var(--yellow-border-color);
+  // border-radius: 10px;
+
+  // @media screen and (min-width: 768px) {
+  //   padding: 32px 60px;
+  //   max-width: 568px;
+  // }
   padding: 28px 30px;
   width: 87.5%;
+  max-height: 615px;
+  height: calc(100vh - 50px);
   max-width: 440px;
+
+  overflow-x: hidden;
+  overflow-y: auto;
   background: var(--modal-fon-color);
   border: 2px solid var(--yellow-border-color);
   border-radius: 10px;
@@ -9,6 +25,7 @@
   @media screen and (min-width: 768px) {
     padding: 32px 60px;
     max-width: 568px;
+    max-height: 685px;
   }
 }
 .modal-franchise__btn {
@@ -23,8 +40,7 @@
   background: none;
   cursor: pointer;
 }
-// .modal-franchise__icon {
-// }
+
 .modal-franchise__title {
   margin-bottom: 20px;
 

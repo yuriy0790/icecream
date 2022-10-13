@@ -1,26 +1,38 @@
 .footer {
+    padding-top: 39px;
     padding-bottom: 62px;
-    position: relative;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 13px;
-    }
-}
-.wrap-flex {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: flex-end;
+        padding-top: 40px;
     }
 
     @media screen and (min-width: 1200px) {
+        padding-top: 120px;
+        padding-bottom: 11px;
+    }
+}
+.wrap-flex {
+    @media screen and (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
         display: flex;
-        align-items: flex-end;
-        margin-bottom: 66px;
+        align-items: end;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 54px;
     }
 }
 .footer__wrap {
-    margin-bottom: 42px;
     max-width: 240px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 42px;
+    }
 
     @media screen and (min-width: 768px) {
         max-width: 352px;
@@ -72,31 +84,16 @@
 }
 
 .footer-connection {
-    margin-bottom: 56px; 
-
-    &:after {
-        position: absolute;
-        bottom: 120px;
-        left: 0;
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background: rgba(225, 225, 225, 1);
-    
-        @media screen and (min-width: 768px) {
-            bottom: 53px;
-        }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 40px;
     }
-
+    
     @media screen and (min-width: 768px) {
         margin-left: auto;
-        padding-top: 68px;
-        margin-bottom: 70px;
     }
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 }
 
@@ -110,10 +107,12 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 32px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
 }
-// .footer-connection__item {
-    
-// }
+
 .footer-connection__link {
     display: flex;
     align-items: center;
@@ -158,10 +157,21 @@
     color: var( --white-text-color);
 }
 .rights {
+    padding-top: 16px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
 
     color: #7A7A7A;
+
+    border-top: 1px solid #E1E1E1;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 14px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+    }
 }
