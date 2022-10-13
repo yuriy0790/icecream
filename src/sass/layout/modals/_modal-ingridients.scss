@@ -6,19 +6,17 @@
   &.active {
     opacity: 1;
     visibility: visible;
+    max-height: 990px;
   }
   @media (max-width: 479px) {
     min-width: 280px;
     width: calc(100% - 40px);
   }
-}
-
-.ingridients__container {
   @media screen and (min-width: 480px) {
     width: 460px;
   }
-
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
+    max-height: 995px;
     width: 568px;
   }
 }
