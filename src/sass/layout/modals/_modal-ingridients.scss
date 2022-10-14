@@ -253,7 +253,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    .fingridients__input:focus + &,
+    .ingridients__input:focus + &,
     .ingridients__input:not(:placeholder-shown) + & {
       transform: translate(-170%, -50%);
       color: var(--orange-text-color);
